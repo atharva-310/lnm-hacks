@@ -14,15 +14,17 @@ import { Logo } from './Logo';
 
 import { Navbar } from './components/Navbar';
 import Home from './components/Home';
+import Schedule from './components/schedule/Schedule';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box>
-        <Box width={'100vw'} position="fixed" zIndex="99">
+      <Box maxW={'100vw'}>
+        <Box width={'100%'} position="fixed" zIndex="99">
           <Navbar />
         </Box>
         <Home />
+        <Schedule />
       </Box>
     </ChakraProvider>
   );

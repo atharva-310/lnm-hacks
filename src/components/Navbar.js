@@ -2,10 +2,7 @@ import {
   Box,
   Button,
   ButtonGroup,
-  InputGroup,
-  InputRightElement,
   Flex,
-  Text,
   Image,
   VStack,
   HStack,
@@ -20,7 +17,8 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  Input,
+  Divider,
+  Center,
 } from '@chakra-ui/react';
 
 import { SearchIcon } from '@chakra-ui/icons';
@@ -31,8 +29,6 @@ import { FiMenu } from 'react-icons/fi';
 import { FaPhoneAlt } from 'react-icons/fa';
 
 import logo from '../logo.svg';
-
-// import SponserModal from './SponserModal';
 
 import { AiFillHeart } from 'react-icons/ai';
 
@@ -45,11 +41,12 @@ export const Navbar = () => {
   return (
     <Box as="section">
       <Box as="nav" bg="bg-surface">
-        <Box py={{ base: '4', lg: '5' }} mx="10vw">
+        <Center py={{ base: '4', lg: '5' }} px={{ base: '0', lg: '5' }}>
           <HStack
             spacing="0"
             justify="space-between"
-            width={'80vw'}
+            width={isDesktop ? '80vw' : '90vw'}
+            maxW="1500px"
             bgColor="white"
             py="15px"
             px="20px"
@@ -137,30 +134,40 @@ export const Navbar = () => {
                 >
                   <DrawerOverlay />
                   <DrawerContent>
-                    <DrawerCloseButton />
+                    <DrawerCloseButton mt="17px" color="white" bg="black" />
                     <DrawerHeader>
-                      <Image src={logo} height="3rem" />
+                      <Image
+                        src={
+                          'https://ethindia.co/_next/static/media/ethindia-logo-name.c9e0fba6.svg'
+                        }
+                        height="3rem"
+                      />
                     </DrawerHeader>
 
                     <DrawerBody>
                       <VStack width={'100%'} alignItems={'flex-start'}>
-                        {['Team', 'About', 'Past Sponsers'].map(item => (
-                          <Button
-                            width={'100%'}
-                            varient="link"
-                            color={'black'}
-                            fontSize="1.2rem"
-                            key={item}
-                          >
-                            {item}
-                          </Button>
-                        ))}
+                        {['Home', 'Team', 'About', 'Past Sponsers'].map(
+                          item => (
+                            <>
+                              <Button
+                                width={'100%'}
+                                color={'black'}
+                                bg="white"
+                                fontFamily="'Josefin Sans', sans-serif"
+                                key={item}
+                                fontSize="1.2rem"
+                              >
+                                {item}
+                              </Button>
+                              <Divider />
+                            </>
+                          )
+                        )}
                       </VStack>
                     </DrawerBody>
 
                     <DrawerFooter>
                       <VStack width={'100%'}>
-                        {/* <SponserModal width={'100%'} /> */}
                         <Button
                           leftIcon={<FaPhoneAlt />}
                           width="100%"
@@ -176,11 +183,7 @@ export const Navbar = () => {
               </>
             )}
           </HStack>
-        </Box>
-        {/* Upcoming events  */}
-        {/* <HStack spacing="0" height={"40px"} justify="space-between" width={"100%"} background="black">
-            <Heading color={"white"} > Upcoming</Heading>
-          </HStack> */}
+        </Center>
       </Box>
     </Box>
   );

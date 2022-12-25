@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  ChakraProvider,
-  Box,
-  Flex,
-  Text,
-  Heading,
-  Button,
-} from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import steve from '../assets/steve1.png';
 export default function Home() {
   return (
@@ -16,6 +9,7 @@ export default function Home() {
       }
       backgroundColor="rgb(196,240,250)"
       backgroundSize="cover"
+      // backgroundPosition={"bottom center"}
       backgroundRepeat={'no-repeat'}
       height="100vh"
       maxW="100vw"
