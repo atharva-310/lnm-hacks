@@ -28,8 +28,8 @@ import * as React from 'react';
 import { FiMenu } from 'react-icons/fi';
 import { FaPhoneAlt } from 'react-icons/fa';
 
-import logo from '../logo.svg';
-
+import logo from '../assets/logo-black.png';
+import logoM from '../assets/logo-black-mob.png'
 import { AiFillHeart } from 'react-icons/ai';
 
 export const Navbar = () => {
@@ -56,10 +56,16 @@ export const Navbar = () => {
             {/* <Image src={logo} height="3rem" /> */}
             <HStack>
               <Image
+                // src={
+                //   isDesktop
+                //     ? 'https://ethindia.co/_next/static/media/ethindia-logo-name.c9e0fba6.svg'
+                //     : 'https://ethindia.co/assets/logos/ethindia-logo.svg'
+                // }
+                height="35px"
                 src={
                   isDesktop
-                    ? 'https://ethindia.co/_next/static/media/ethindia-logo-name.c9e0fba6.svg'
-                    : 'https://ethindia.co/assets/logos/ethindia-logo.svg'
+                    ? logo
+                    : logoM
                 }
               />
               {/* <Text
@@ -92,13 +98,13 @@ export const Navbar = () => {
                 </ButtonGroup>
                 <HStack spacing="3">
                   <Button
-                    bg="blue.800"
+                    bg="black"
                     color="white"
                     size="lg"
                     fontFamily="'Josefin Sans', sans-serif"
                     fontSize="20px"
                   >
-                    Register
+                    Sponser Us
                   </Button>
                   {/* <InputGroup minW="200px">
                     <Input
@@ -134,13 +140,13 @@ export const Navbar = () => {
                 >
                   <DrawerOverlay />
                   <DrawerContent>
-                    <DrawerCloseButton mt="17px" color="white" bg="black" />
+                    <DrawerCloseButton mt="13px" color="white" bg="black" />
                     <DrawerHeader>
                       <Image
                         src={
-                          'https://ethindia.co/_next/static/media/ethindia-logo-name.c9e0fba6.svg'
+                          logo
                         }
-                        height="3rem"
+                        height="2.5rem"
                       />
                     </DrawerHeader>
 

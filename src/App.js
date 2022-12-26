@@ -15,16 +15,21 @@ import { Logo } from './Logo';
 import { Navbar } from './components/Navbar';
 import Home from './components/Home';
 import Schedule from './components/schedule/Schedule';
+import MotionNav from './components/MotionNav';
+import Loader from './components/Loader';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <Box maxW={'100vw'}>
         <Box width={'100%'} position="fixed" zIndex="99">
-          <Navbar />
+          {/* <Navbar /> */}
+          <MotionNav />
         </Box>
+        <Loader />
         <Home />
         <Schedule />
+        
       </Box>
     </ChakraProvider>
   );

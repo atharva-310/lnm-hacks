@@ -1,15 +1,23 @@
 import React from 'react';
-import { Box } from '@chakra-ui/react';
-import steve from '../assets/steve1.png';
+import { Box, useBreakpointValue} from '@chakra-ui/react';
+import steve from '../assets/homeHeroSteve.png';
+import steveMob from '../assets/homeHeroSteveMob.png';
+
+
 export default function Home() {
+  const toggleHero = useBreakpointValue({ base: false, md: false,lg: true });
+  const isDesktop = useBreakpointValue({ base: false, lg: true });
+  console.log(isDesktop);
   return (
     <Box
-      backgroundImage={
-        'https://ethindia.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.fbc70285.png&w=3840&q=75'
-      }
-      backgroundColor="rgb(196,240,250)"
-      backgroundSize="cover"
-      // backgroundPosition={"bottom center"}
+      // backgroundImage={
+      //   'https://ethindia.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.fbc70285.png&w=3840&q=75'
+      // }
+      bgImage={ toggleHero ? steve : steveMob}
+
+      backgroundColor="black"
+      backgroundSize={isDesktop ? "cover" : "contain"}
+      backgroundPosition={" center "}
       backgroundRepeat={'no-repeat'}
       height="100vh"
       maxW="100vw"
