@@ -1,5 +1,6 @@
 {
   "name": "lnm-hacks-website",
+  "homepage": "https://atharva-310.github.io/lnm-hacks/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
