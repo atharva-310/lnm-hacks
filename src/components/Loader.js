@@ -17,8 +17,9 @@ export default function Loader() {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       var tLine = gsap.timeline();
-
+      tLine.delay(1);
       tLine.from(bar.current, {
+        opacity: 0,
         rotate: '100',
         x: '100',
       });
