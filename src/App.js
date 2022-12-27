@@ -46,7 +46,7 @@ function App() {
               </Box>
 
               <Home />
-              <Schedule />
+              {/* <Schedule /> */}
             </>
           </motion.div>
         )}
