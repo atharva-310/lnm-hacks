@@ -56,11 +56,11 @@ export default function Loader() {
         '#tlast',
         {
           opacity: 0,
-          x: 100,
+          y: -100,
         },
         {
           opacity: 1,
-          x: 0,
+          y: 0,
         }
       );
     }, root);
@@ -101,10 +101,10 @@ export default function Loader() {
       <Heading
         ref={title}
         width={['30%', 'auto']}
-        fontSize={['20px', '20px', '30px', '30px', '50px']}
+        fontSize={['20px', '30px', '30px', '30px', '50px']}
         visibility="hidden"
       >
-        Comming Soon
+        Comming
       </Heading>
       {items.map((item, index) => {
         return (
@@ -113,7 +113,7 @@ export default function Loader() {
             left={right}
             position="absolute"
             fontWeight="500"
-            fontSize={['30px', '50px']}
+            fontSize={['20px', '30px', '30px', '50px']}
           >
             {item}
           </Heading>
@@ -127,9 +127,10 @@ export default function Loader() {
         position="absolute"
         fontWeight="500"
         fontStyle="italic"
-        fontSize={['30px', '50px']}
+        fontSize={['20px', '50px']}
+        // overflow="hidden"
       >
-        Let's hack ..
+        Let's hack..
       </Heading>
     </div>
   );
