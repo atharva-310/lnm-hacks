@@ -1,6 +1,6 @@
 {
   "name": "lnm-hacks-website",
-  "homepage": "http://lnmhacks.xyz/",
+  "homepage": "https://lnmhacks.xyz/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
