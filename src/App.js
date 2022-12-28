@@ -22,7 +22,6 @@ function App() {
   const stopLoader = () => {
     setLoading(false);
   };
-
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
