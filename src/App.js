@@ -9,10 +9,10 @@ import {
   Grid,
   theme,
 } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import { Navbar } from './components/Navbar';
+import { motion, useScroll, useSpring } from 'framer-motion';
+
 import Home from './components/Home';
-import Schedule from './components/schedule/Schedule';
+
 import MotionNav from './components/MotionNav';
 import Loader from './components/Loader';
 
@@ -41,12 +41,10 @@ function App() {
           >
             <>
               <Box width={'100%'} position="fixed" zIndex="99">
-                {/* <Navbar /> */}
                 <MotionNav />
               </Box>
 
               <Home />
-              {/* <Schedule /> */}
             </>
           </motion.div>
         )}

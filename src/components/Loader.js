@@ -64,6 +64,16 @@ export default function Loader() {
           y: 0,
         }
       );
+
+      tLine.fromTo(
+        '#dates',
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        }
+      );
     }, root);
 
     return () => ctx.revert();
@@ -130,6 +140,16 @@ export default function Loader() {
         fontStyle="italic"
         fontSize={['20px', '50px']}
         // overflow="hidden"
+      >
+        Let's hack..
+      </Heading>
+      <Heading
+        id="dates"
+        left={right}
+        position="absolute"
+        fontWeight="500"
+        fontStyle="italic"
+        fontSize={['20px', '50px']}
       >
         Let's hack..
       </Heading>
