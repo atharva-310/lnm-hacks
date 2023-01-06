@@ -81,7 +81,16 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 export default function ScrollerBanner() {
   return (
     <Box position="relative">
-      <ParallaxText baseVelocity={-5}> Web 3.0 NFT</ParallaxText>
+      <ParallaxText baseVelocity={0.5}>
+        {' '}
+        Hackathon blockchain Defi DAO nft gaming innovation community
+        development coding design
+      </ParallaxText>
+      <ParallaxText baseVelocity={-0.5}>
+        {' '}
+        Hackathon blockchain Defi DAO nft gaming innovation community
+        development coding design
+      </ParallaxText>
       {/* <ParallaxText baseVelocity={5}>React.js</ParallaxText> */}
     </Box>
   );

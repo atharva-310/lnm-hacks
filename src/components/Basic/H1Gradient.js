@@ -10,6 +10,7 @@ export default function H1Gradient(props) {
         bgClip="text"
         fontSize="5xl"
         width="400px"
+        maxW={'100vw'}
       >
         {props.content}
       </Heading>
