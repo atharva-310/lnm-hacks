@@ -1,13 +1,24 @@
 {
   "files": {
-    "main.js": "/static/js/main.4ca74768.js",
+    "main.css": "/static/css/main.fd581a2c.css",
+    "main.js": "/static/js/main.ed9b6334.js",
     "static/media/homeHeroSteveMob.png": "/static/media/homeHeroSteveMob.3db1e42397c672734cae.png",
     "static/media/homeHeroSteve.png": "/static/media/homeHeroSteve.778cee90e9ccca5f4240.png",
-    "static/media/sch-d1.png": "/static/media/sch-d1.bee85410919a77bf1921.png",
+    "static/media/aboutImg.png": "/static/media/aboutImg.0a3a527c4b300e38926e.png",
+    "static/media/du.png": "/static/media/du.d0a7402b41a023d5baf8.png",
+    "static/media/git.png": "/static/media/git.b5de6db994b1a24f17cd.png",
+    "static/media/wolf.png": "/static/media/wolf.5381867fc7081a38b505.png",
+    "static/media/know.png": "/static/media/know.6cf70f09f017512005ea.png",
+    "static/media/stick.png": "/static/media/stick.019e46ecccbf1fcf8a02.png",
+    "static/media/camp.png": "/static/media/camp.85e61593184f0682efd7.png",
+    "static/media/jetbrains.png": "/static/media/jetbrains.2b56c87ce12f3813c38c.png",
+    "static/media/cb.png": "/static/media/cb.f042883520ac0fdff275.png",
     "index.html": "/index.html",
-    "main.4ca74768.js.map": "/static/js/main.4ca74768.js.map"
+    "main.fd581a2c.css.map": "/static/css/main.fd581a2c.css.map",
+    "main.ed9b6334.js.map": "/static/js/main.ed9b6334.js.map"
   },
   "entrypoints": [
-    "static/js/main.4ca74768.js"
+    "static/css/main.fd581a2c.css",
+    "static/js/main.ed9b6334.js"
   ]
 }
