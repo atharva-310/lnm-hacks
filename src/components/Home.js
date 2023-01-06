@@ -9,6 +9,7 @@ export default function Home() {
   //   console.log(isDesktop);
   return (
     <Box
+      id="home"
       // backgroundImage={
       //   'https://ethindia.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.fbc70285.png&w=3840&q=75'
       // }

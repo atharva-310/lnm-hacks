@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Mono:wght@700&display=swap'); 
+
+.cursor {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	mix-blend-mode: difference;
+	background-color: white;
+	z-index: 99;
+	pointer-events: none;
+  }
+
+
+.parallax {
+	overflow: hidden;
+	letter-spacing: -2px;
+	line-height: 0.8;
+	margin: 0;
+	white-space: nowrap;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+
+.parallax .scroller {
+	font-family: 'Roboto Mono', monospace;
+	/* font-style: italic; */
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 110%;
+	text-transform: uppercase;
+	display: flex;
+	white-space: nowrap;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.parallax span {
+	display: block;
+	margin-right: 30px;
+	color: white;
+	
+	/* margin:10; */
+}

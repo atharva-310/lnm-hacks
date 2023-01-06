@@ -5,7 +5,7 @@ export default function MotionNav() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2.5, delay: 0.5 }}
+      transition={{ duration: 2, delay: 0.5 }}
     >
       <Navbar />
     </motion.div>

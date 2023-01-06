@@ -65,15 +65,18 @@ export default function Loader() {
         }
       );
 
-      tLine.fromTo(
-        '#dates',
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-        }
-      );
+      // tLine.fromTo(
+      //   '#dates',
+      //   {
+      //     opacity: 0,
+
+      //     y: 60,
+      //   },
+      //   {
+      //     opacity: 1,
+      //     y: 60,
+      //   }
+      // );
     }, root);
 
     return () => ctx.revert();
@@ -134,22 +137,13 @@ export default function Loader() {
         id={`tlast`}
         left={right}
         bgGradient="linear(to-l, #7928CA, #FF0080)"
+        // bgClip="text"
         px="10px"
         position="absolute"
         fontWeight="500"
         fontStyle="italic"
         fontSize={['20px', '50px']}
         // overflow="hidden"
-      >
-        Let's hack..
-      </Heading>
-      <Heading
-        id="dates"
-        left={right}
-        position="absolute"
-        fontWeight="500"
-        fontStyle="italic"
-        fontSize={['20px', '50px']}
       >
         Let's hack..
       </Heading>
