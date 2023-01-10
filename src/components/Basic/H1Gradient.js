@@ -9,8 +9,8 @@ export default function H1Gradient(props) {
         bgGradient="linear(to-r,#4AC7FA, #E649F5,  #E649F5)"
         bgClip="text"
         fontSize="5xl"
-        width="400px"
-        maxW={'100vw'}
+        width="500px"
+        maxW={'90vw'}
       >
         {props.content}
       </Heading>

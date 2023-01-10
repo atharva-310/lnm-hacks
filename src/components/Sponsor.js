@@ -27,6 +27,7 @@ const SponsorPage = () => {
   return (
     <>
       <H1Gradient content={'Past Sponsors'} />
+
       <Flex
         flexDir="row"
         flexWrap="wrap"
