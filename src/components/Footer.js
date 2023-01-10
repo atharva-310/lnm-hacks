@@ -12,7 +12,7 @@ import {
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import socials from '../api/socials';
 
-import logo from '../assets/logo-black.png';
+import logo from '../assets/logo-white-dates.png';
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -48,17 +48,13 @@ export default function Footer() {
         maxW={'6xl'}
         py="40px"
         pb="40px"
-        direction={{ base: 'column', md: 'row' }}
+        direction={{ base: 'column', md: 'column', lg: 'row' }}
         spacing={4}
-        justify={{ base: 'center', md: 'space-between' }}
+        justify={{ base: 'center', md: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}
       >
         <Box textAlign="center" mb="10px">
-          {' '}
-          <Image height="30px" src={logo} filter={'invert(100%)'} />
-          <Text width="100%" pl="10px" mt="6px" fontWeight="500">
-            27-29 Januray
-          </Text>
+          <Image height="50px" src={logo} />
         </Box>
 
         <Text textAlign="center" fontSize="md">

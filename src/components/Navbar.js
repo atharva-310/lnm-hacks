@@ -35,6 +35,11 @@ import logo from '../assets/logo-black.png';
 import logoM from '../assets/logo-black-mob.png';
 import { AiFillHeart } from 'react-icons/ai';
 
+const navItems = [
+  { name: 'Home', id: '#home' },
+  { name: 'About', id: '#about' },
+  { name: 'Past Sponsor', id: '#sponsor' },
+];
 export const Navbar = () => {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
   const [isDark, setColor] = useState(false);
@@ -85,11 +90,7 @@ export const Navbar = () => {
             {isDesktop ? (
               <Flex justify="flex-end" flex="1">
                 <ButtonGroup variant="link" spacing="8" marginEnd="20px">
-                  {[
-                    { name: 'Home', id: '#home' },
-                    { name: 'About', id: '#about' },
-                    { name: 'Past Sponsor', id: '#sponsor' },
-                  ].map((item, index) => (
+                  {navItems.map((item, index) => (
                     <a
                       href={item.id}
                       style={{ paddingTop: '13px', textDecoration: 'none' }}
@@ -115,10 +116,9 @@ export const Navbar = () => {
                     size="lg"
                     fontFamily="'Josefin Sans', sans-serif"
                     fontSize="20px"
-                    // datacursortext="Mail us"
-                    datacursortext="Tweet"
-                    datacursortextrepeat="5"
                     _hover={{ transform: 'scale(1.1)' }}
+                    as="a"
+                    href="mailto:sponsors@lnmhacks.xyz"
                   >
                     Sponsor Us
                   </Button>
@@ -168,38 +168,43 @@ export const Navbar = () => {
 
                     <DrawerBody>
                       <VStack width={'100%'} alignItems={'flex-start'}>
-                        {['Home', 'Team', 'About', 'Past Sponsers'].map(
-                          (item, index) => (
-                            // <Box key={index}>
-                            <>
-                              <Button
-                                width={'100%'}
-                                color={'white'}
-                                bg="black"
-                                fontFamily="'Josefin Sans', sans-serif"
-                                key={item}
-                                fontSize="1.2rem"
-                              >
-                                {item}
-                              </Button>
-                              <Divider />
-                            </>
+                        {navItems.map((item, index) => (
+                          // <Box key={index}>
+                          <>
+                            <Button
+                              width={'100%'}
+                              color={'white'}
+                              bg="black"
+                              fontFamily="'Josefin Sans', sans-serif"
+                              key={item}
+                              fontSize="1.2rem"
+                              as="a"
+                              href={item.id}
+                              onClick={onClose}
+                            >
+                              {item.name}
+                            </Button>
+                            <Divider />
+                          </>
 
-                            // </Box>
-                          )
-                        )}
+                          // </Box>
+                        ))}
                       </VStack>
                     </DrawerBody>
 
                     <DrawerFooter>
                       <VStack width={'100%'}>
                         <Button
-                          leftIcon={<FaPhoneAlt />}
                           width="100%"
-                          colorScheme="green"
+                          rounded="lg"
+                          fontFamily="'Josefin Sans', sans-serif"
+                          fontSize="20px"
                           variant="solid"
+                          as="a"
+                          href="mailto:sponsors@lnmhacks.xyz"
+                          target="_blank"
                         >
-                          Contact Us
+                          Sponsor Us
                         </Button>
                         <HStack
                           justify="space-evenly"
@@ -207,7 +212,7 @@ export const Navbar = () => {
                           height="50px"
                           w="100%"
                           p="10px"
-                          rounded="xl"
+                          rounded="lg"
                         >
                           {socials.map((item, index) => {
                             return (

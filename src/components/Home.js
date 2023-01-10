@@ -7,9 +7,9 @@ import {
   Heading,
   Text,
 } from '@chakra-ui/react';
-import steve from '../assets/homeHeroSteve.png';
-import steveMob from '../assets/homeHeroSteveMob.png';
-
+import steve from '../assets/hero-new.png';
+// import steveMob from '../assets/homeHeroSteveMob.png';
+import steveMob from '../assets/hero-new-mob.png';
 export default function Home() {
   const toggleHero = useBreakpointValue({ base: false, md: false, lg: true });
   const isDesktop = useBreakpointValue({ base: false, lg: true });

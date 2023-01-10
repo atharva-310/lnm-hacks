@@ -2,13 +2,14 @@ import {
   AiFillTwitterSquare,
   AiFillFacebook,
   AiFillLinkedin,
+  AiFillMail,
 } from 'react-icons/ai';
 import { Box } from '@chakra-ui/react';
 import { FaDiscord } from 'react-icons/fa';
 const socials = [
   {
     name: 'Twitter',
-    link: 'twitter.com/lnmhacks',
+    link: 'https://twitter.com/lnmhacks',
     logo: <AiFillTwitterSquare />,
   },
   {
@@ -18,18 +19,23 @@ const socials = [
   },
   {
     name: 'Facebook',
-    link: 'https://www.twitter.com/lnmhacks',
+    link: ' https://www.facebook.com/lnmhacks/',
     logo: <AiFillFacebook />,
   },
   {
-    name: 'Discord',
-    link: 'https://www.twitter.com/lnmhacks',
-    logo: (
-      <Box fontSize="3xl">
-        <FaDiscord />
-      </Box>
-    ),
+    name: 'Mail',
+    link: 'mailto:support@lnmhacks.xyz',
+    logo: <AiFillMail />,
   },
+  // {
+  //   name: 'Discord',
+  //   link: 'https://www.twitter.com/lnmhacks',
+  //   logo: (
+  //     <Box fontSize="3xl">
+  //       <FaDiscord />
+  //     </Box>
+  //   ),
+  // },
 ];
 
 export default socials;

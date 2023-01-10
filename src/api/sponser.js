@@ -29,6 +29,22 @@ const sponsorData = [
     link: 'https://www.cloudflare.com/en-gb/',
   },
   {
+    id: 15,
+    imgSrc: 'https://foundations.projectpythia.org/_images/GitHub-logo.png',
+    name: 'Github',
+    description:
+      'GitHub is where people build software. More than 94 million people use GitHub to discover, fork, and contribute to over 330 million projects.',
+    link: 'https://github.com/',
+  },
+  {
+    id: 14,
+    imgSrc:
+      'https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png',
+    name: 'Major League Hacking',
+    description: 'The official collegiate hackathon league.',
+    link: 'https://mlh.io/',
+  },
+  {
     id: 3,
     imgSrc: Sketch,
     name: 'Sketch',

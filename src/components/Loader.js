@@ -2,7 +2,7 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 // import "./styles.css";
 import { motion } from 'framer-motion';
-import logoW from '../assets/logo-white.png';
+import logoW from '../assets/logo-white-dates.png';
 import { Box, Heading, Image } from '@chakra-ui/react';
 
 export default function Loader() {
@@ -104,6 +104,7 @@ export default function Loader() {
         width={['40%', '40%', '40%', '40%']}
         maxWidth="400px"
         src={logoW}
+        // filter={'invert(100%)'}
       />
       <Box
         ref={bar}

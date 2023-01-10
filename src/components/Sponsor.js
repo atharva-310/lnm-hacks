@@ -40,7 +40,6 @@ const SponsorPage = () => {
               key={index}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              onClick={() => {}}
               href={item.link}
               target="_blank"
             >
@@ -62,6 +61,7 @@ const SponsorPage = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           target="_blank"
+          href={'mailto:sponsors@lnmhacks.xyz'}
         >
           <Box
             // key={index}
@@ -72,6 +72,8 @@ const SponsorPage = () => {
             height={isDesktop ? '150px' : '100px'}
             bg="white"
             rounded="xl"
+            // as="a"
+            href=""
           >
             {/* <SponserCard data={item} /> */}
             <Center

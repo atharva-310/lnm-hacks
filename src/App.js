@@ -51,16 +51,16 @@ function App() {
     };
   }, []);
 
-  // React.useEffect(() => {
-  //   const script = document.createElement('script');
-  //   script.src = 'https://apply.devfolio.co/v2/sdk.js';
-  //   script.async = true;
-  //   script.defer = true;
-  //   document.body.appendChild(script);
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   };
-  // }, []);
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   const stopLoader = () => {
     setLoading(false);
@@ -98,14 +98,15 @@ function App() {
                 <AboutUs />
                 <ScrollerBanner />
                 <Sponsor />
-                {/* <div
+                <div
                   className="apply-button"
                   data-hackathon-slug="lnmhacks"
                   data-button-theme="dark"
-                  style={{
-                    width: '100px',
-                  }}
-                ></div> */}
+                  // style={{
+                  //   width: '100px',
+                  //   height: '200px',
+                  // }}
+                ></div>
 
                 <Divider />
                 <Footer />
