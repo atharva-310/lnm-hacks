@@ -1,7 +1,5 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-// import "./styles.css";
-import { motion } from 'framer-motion';
 import logoW from '../assets/logo-white-dates.png';
 import { Box, Heading, Image } from '@chakra-ui/react';
 

@@ -1,6 +1,6 @@
 import { Center, Image } from '@chakra-ui/react';
 
-export function SponserCard(props) {
+export function PastSponserCard(props) {
   return (
     <Center width="100%" height="100%" p="20px">
       <Image
@@ -14,7 +14,7 @@ export function SponserCard(props) {
   );
 }
 
-export function SponserUsCard(props) {
+export function PastSponserUsCard(props) {
   return (
     <Center width="100%" height="100%" p="20px">
       <Image

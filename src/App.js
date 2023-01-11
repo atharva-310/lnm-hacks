@@ -12,11 +12,12 @@ import useCursor from './hooks/useCursor';
 import Home from './components/Home';
 import MotionNav from './components/MotionNav';
 import Loader from './components/Loader';
-import Sponsor from './components/Sponsor';
+import PastSponsor from './components/PastSponsor';
 import AboutUs from './components/AboutUs';
 import ScrollerBanner from './components/ScrollerBanner';
 import Footer from './components/Footer';
 import Register from './components/Register';
+import Sponsor from './components/Sponsor';
 
 function App() {
   const body = useRef(null);
@@ -86,13 +87,7 @@ function App() {
               animate={{ opacity: 1 }}
             >
               <>
-                <Box
-                  width={'100%'}
-                  position="fixed"
-                  zIndex="80"
-                  // onMouseEnter={subTextEnter}
-                  // onMouseLeave={textLeave}
-                >
+                <Box width={'100%'} position="fixed" zIndex="80">
                   <MotionNav />
                 </Box>
                 <Home />
@@ -100,7 +95,7 @@ function App() {
                 <ScrollerBanner />
                 <Register />
                 <Sponsor />
-
+                <PastSponsor />
                 <Divider />
                 <Footer />
               </>

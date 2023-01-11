@@ -27,15 +27,15 @@ const socials = [
     link: 'mailto:support@lnmhacks.xyz',
     logo: <AiFillMail />,
   },
-  // {
-  //   name: 'Discord',
-  //   link: 'https://www.twitter.com/lnmhacks',
-  //   logo: (
-  //     <Box fontSize="3xl">
-  //       <FaDiscord />
-  //     </Box>
-  //   ),
-  // },
+  {
+    name: 'Discord',
+    link: 'https://discord.gg/uSNPwTGYhh',
+    logo: (
+      <Box fontSize="3xl">
+        <FaDiscord />
+      </Box>
+    ),
+  },
 ];
 
 export default socials;

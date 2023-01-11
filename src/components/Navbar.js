@@ -38,8 +38,7 @@ import { AiFillHeart } from 'react-icons/ai';
 const navItems = [
   { name: 'Home', id: '#home' },
   { name: 'About', id: '#about' },
-
-  { name: 'Past Sponsor', id: '#sponsor' },
+  { name: 'Sponsors', id: '#sponsor' },
 ];
 export const Navbar = () => {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
