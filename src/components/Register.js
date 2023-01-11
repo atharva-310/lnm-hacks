@@ -19,12 +19,14 @@ function RegisterPage() {
       </Heading>
       <Heading
         as={'h1'}
-        fontSize="5xl"
-        textTransform="uppercase"
+        fontSize="4xl"
+        mt="15px"
+        // textTransform="uppercase"
+        // color="black"
         textAlign="center"
         width={isDesktop ? '600px' : 'auto'}
       >
-        Join the league of Hackers
+        Unite in the League of Geeks, Join the Confederation of Hackers
       </Heading>
       <Box mt="40px">
         <div

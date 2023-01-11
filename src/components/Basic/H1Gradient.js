@@ -1,7 +1,7 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
 
-export default function H1Gradient(props) {
+export default function H1Gradient({ content, ...props }) {
   return (
     <>
       <Heading
@@ -12,13 +12,14 @@ export default function H1Gradient(props) {
         width="500px"
         maxW={'90vw'}
       >
-        {props.content}
+        {content}
       </Heading>
       <Box
         width="50px"
         height="7px"
         mt="15px"
         bgGradient="linear(to-r,#4AC7FA, #E649F5)"
+        {...props}
       ></Box>
     </>
   );
