@@ -23,7 +23,7 @@ export default function Home() {
       bgImage={toggleHero ? steve : steveMob}
       // bgImage={steve}
       backgroundColor="black"
-      backgroundSize={isDesktop ? 'cover' : 'cover'}
+      backgroundSize={isDesktop ? 'cover' : 'contain'}
       backgroundPosition={' center '}
       backgroundRepeat={'no-repeat'}
       height="100vh"

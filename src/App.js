@@ -22,7 +22,7 @@ import Sponsor from './components/Sponsor';
 function App() {
   const body = useRef(null);
 
-  const [isLoading, setLoading] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
   // useCursor(body);
 
