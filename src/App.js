@@ -16,11 +16,12 @@ import Sponsor from './components/Sponsor';
 import AboutUs from './components/AboutUs';
 import ScrollerBanner from './components/ScrollerBanner';
 import Footer from './components/Footer';
+import Register from './components/Register';
 
 function App() {
   const body = useRef(null);
 
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(false);
 
   // useCursor(body);
 
@@ -97,16 +98,8 @@ function App() {
                 <Home />
                 <AboutUs />
                 <ScrollerBanner />
+                <Register />
                 <Sponsor />
-                <div
-                  className="apply-button"
-                  data-hackathon-slug="lnmhacks"
-                  data-button-theme="dark"
-                  // style={{
-                  //   width: '100px',
-                  //   height: '200px',
-                  // }}
-                ></div>
 
                 <Divider />
                 <Footer />

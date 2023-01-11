@@ -38,6 +38,7 @@ import { AiFillHeart } from 'react-icons/ai';
 const navItems = [
   { name: 'Home', id: '#home' },
   { name: 'About', id: '#about' },
+
   { name: 'Past Sponsor', id: '#sponsor' },
 ];
 export const Navbar = () => {
@@ -108,14 +109,25 @@ export const Navbar = () => {
                     </a>
                   ))}
                 </ButtonGroup>
-                <HStack spacing="3">
+                <HStack
+                  spacing="3"
+                  fontFamily="'Josefin Sans', sans-serif"
+                  fontSize="20px"
+                >
                   <Button
-                    className="cursor-hover-item"
                     bg="black"
                     color="white"
                     size="lg"
-                    fontFamily="'Josefin Sans', sans-serif"
-                    fontSize="20px"
+                    _hover={{ transform: 'scale(1.1)' }}
+                    as="a"
+                    href="#register"
+                  >
+                    Register
+                  </Button>
+                  <Button
+                    bg="black"
+                    color="white"
+                    size="lg"
                     _hover={{ transform: 'scale(1.1)' }}
                     as="a"
                     href="mailto:sponsors@lnmhacks.xyz"
@@ -193,19 +205,33 @@ export const Navbar = () => {
                     </DrawerBody>
 
                     <DrawerFooter>
-                      <VStack width={'100%'}>
+                      <VStack
+                        width={'100%'}
+                        fontFamily="'Josefin Sans', sans-serif"
+                        fontSize="20px"
+                      >
                         <Button
                           width="100%"
                           rounded="lg"
-                          fontFamily="'Josefin Sans', sans-serif"
-                          fontSize="20px"
+                          variant="solid"
+                          as="a"
+                          href="#register"
+                          onClick={onClose}
+                        >
+                          Register
+                        </Button>
+                        <Button
+                          width="100%"
+                          rounded="lg"
                           variant="solid"
                           as="a"
                           href="mailto:sponsors@lnmhacks.xyz"
                           target="_blank"
+                          onClick={onClose}
                         >
                           Sponsor Us
                         </Button>
+
                         <HStack
                           justify="space-evenly"
                           bg="white"
