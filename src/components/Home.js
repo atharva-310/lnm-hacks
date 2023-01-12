@@ -8,6 +8,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 import steve from '../assets/hero-new.png';
+
 // import steveMob from '../assets/homeHeroSteveMob.png';
 import steveMob from '../assets/hero-new-mob.png';
 export default function Home() {
