@@ -191,7 +191,7 @@ export const Navbar = () => {
                               fontSize="1.2rem"
                               as="a"
                               href={item.id}
-                              onClick={onClose}
+                              // onClick={onClose}
                             >
                               {item.name}
                             </Button>

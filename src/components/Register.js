@@ -35,7 +35,7 @@ function RegisterPage() {
         textAlign="center"
         width={isDesktop ? '600px' : 'auto'}
       >
-        Unite in the League of Geeks, Join the Confederation of Hackers
+        Unite In The League of Geeks, Join The Confederation of Hackers
       </Heading>
       <Box mt="40px">
         <div
