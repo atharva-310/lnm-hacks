@@ -11,7 +11,7 @@ import sola from '../assets/cur-sponsor-logo/Solana-Colored.png';
 // other
 import task from '../assets/cur-sponsor-logo/logo_taskade_black.png';
 import xyz from '../assets/cur-sponsor-logo/xyz-logo-color.png';
-
+import echo from '../assets/cur-sponsor-logo/echo.png';
 export const platinum = [
   {
     id: 1,
@@ -72,5 +72,11 @@ export const other = [
     name: '.xyz',
     logo: xyz,
     link: 'https://gen.xyz/',
+  },
+  {
+    id: 3,
+    name: 'echo3D',
+    logo: echo,
+    link: 'https://www.echo3d.com/',
   },
 ];
