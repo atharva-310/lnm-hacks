@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.be9623d5.css",
-    "main.js": "/static/js/main.6f7e04f0.js",
+    "main.js": "/static/js/main.cdc7970f.js",
     "static/media/hero-new.png": "/static/media/hero-new.59842279ccf78289ead8.png",
     "static/media/hero-new-mob.png": "/static/media/hero-new-mob.636b31493fa5be7e5e60.png",
     "static/media/aboutImg.png": "/static/media/aboutImg.0a3a527c4b300e38926e.png",
@@ -13,6 +13,7 @@
     "static/media/stick.png": "/static/media/stick.019e46ecccbf1fcf8a02.png",
     "static/media/camp.png": "/static/media/camp.85e61593184f0682efd7.png",
     "static/media/jetbrains.png": "/static/media/jetbrains.2b56c87ce12f3813c38c.png",
+    "static/media/echo.png": "/static/media/echo.b466dfa2b1beacefed80.png",
     "static/media/cb.png": "/static/media/cb.f042883520ac0fdff275.png",
     "static/media/Solana-Colored.png": "/static/media/Solana-Colored.ced114bf5db913f2f1de.png",
     "static/media/Replit-light-background.png": "/static/media/Replit-light-background.7dfcd85e073f18b57609.png",
@@ -21,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.be9623d5.css",
-    "static/js/main.6f7e04f0.js"
+    "static/js/main.cdc7970f.js"
   ]
 }
