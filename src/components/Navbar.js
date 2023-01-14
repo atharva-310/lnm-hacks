@@ -215,7 +215,7 @@ export const Navbar = () => {
                           variant="solid"
                           as="a"
                           href="#register"
-                          onClick={onClose}
+                          // onClick={onClose}
                         >
                           Register
                         </Button>
@@ -226,7 +226,7 @@ export const Navbar = () => {
                           as="a"
                           href="mailto:sponsors@lnmhacks.xyz"
                           target="_blank"
-                          onClick={onClose}
+                          // onClick={onClose}
                         >
                           Sponsor Us
                         </Button>

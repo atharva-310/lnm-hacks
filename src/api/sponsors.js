@@ -12,6 +12,10 @@ import sola from '../assets/cur-sponsor-logo/Solana-Colored.png';
 import task from '../assets/cur-sponsor-logo/logo_taskade_black.png';
 import xyz from '../assets/cur-sponsor-logo/xyz-logo-color.png';
 import echo from '../assets/cur-sponsor-logo/echo.png';
+
+// community
+import three from '../assets/cur-sponsor-logo/three.jpg';
+
 export const platinum = [
   {
     id: 1,
@@ -81,10 +85,11 @@ export const other = [
   },
 ];
 
-export const newSponser = [
-{
-  id:1,
-  name: 'Threeway Studio',
-  link: 'https://www.threeway.studio/',
-},
+export const community = [
+  {
+    id: 1,
+    name: 'Threeway Studio',
+    logo: three,
+    link: 'https://www.threeway.studio/',
+  },
 ];
