@@ -80,3 +80,11 @@ export const other = [
     link: 'https://www.echo3d.com/',
   },
 ];
+
+export const newSponser = [
+{
+  id:1,
+  name: 'Threeway Studio',
+  link: 'https://www.threeway.studio/',
+},
+];
