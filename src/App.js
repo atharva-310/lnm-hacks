@@ -4,6 +4,8 @@ import {
   Box,
   theme,
   useColorMode,
+ 
+
   Divider,
 } from '@chakra-ui/react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
@@ -18,6 +20,7 @@ import ScrollerBanner from './components/ScrollerBanner';
 import Footer from './components/Footer';
 import Register from './components/Register';
 import Sponsor from './components/Sponsor';
+import Signup from './components/Signup';
 
 function App() {
   const body = useRef(null);
@@ -85,6 +88,7 @@ function App() {
                 <Register />
                 <Sponsor />
                 <PastSponsor />
+                <Signup />
                 <Divider />
                 <Footer />
               </>
