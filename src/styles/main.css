@@ -38,10 +38,19 @@
 .changingGradient1 {
     background: linear-gradient(135deg,#0ed2f7,#7aaac8,#AFB4FF,#BA94D1, #fdba66,#f1b5b5,#e66ea6);
     background-size: 1200% 1200%;
-    -webkit-animation: gradientChange 13s ease infinite;
-    -moz-animation: gradientChange 13s ease infinite;
-    -o-animation: gradientChange 13s ease infinite;
-    animation: gradientChange 13s ease infinite;
+    -webkit-animation: gradientChange 10s ease infinite;
+    -moz-animation: gradientChange 10s ease infinite;
+    -o-animation: gradientChange 10s ease infinite;
+    animation: gradientChange 10s ease infinite;
+}
+
+.changingGradient2 {
+  background: linear-gradient(135deg, #fdba66,#f1b5b5,#e66ea6,#0ed2f7,#7aaac8,#AFB4FF,#BA94D1);
+  background-size: 1200% 1200%;
+  -webkit-animation: gradientChange 13s ease infinite;
+  -moz-animation: gradientChange 13s ease infinite;
+  -o-animation: gradientChange 13s ease infinite;
+  animation: gradientChange 13s ease infinite;
 }
 
 @-webkit-keyframes gradientChange {
