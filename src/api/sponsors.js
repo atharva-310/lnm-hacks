@@ -15,6 +15,7 @@ import echo from '../assets/cur-sponsor-logo/echo.png';
 
 // community
 import three from '../assets/cur-sponsor-logo/three.jpg';
+import interview from '../assets/cur-sponsor-logo/interview.png';
 
 export const platinum = [
   {
@@ -92,4 +93,10 @@ export const community = [
     logo: three,
     link: 'https://www.threeway.studio/',
   },
+  {
+    id:2,
+    name:'Interview Cake',
+    logo: interview,
+    link: 'https://www.interviewcake.com/',
+  }
 ];
