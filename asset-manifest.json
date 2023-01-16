@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.be9623d5.css",
-    "main.js": "/static/js/main.010fad99.js",
+    "main.js": "/static/js/main.14b0dea8.js",
     "static/media/hero-new.png": "/static/media/hero-new.59842279ccf78289ead8.png",
     "static/media/hero-new-mob.png": "/static/media/hero-new-mob.636b31493fa5be7e5e60.png",
     "static/media/aboutImg.png": "/static/media/aboutImg.0a3a527c4b300e38926e.png",
@@ -11,18 +11,18 @@
     "static/media/wolf.png": "/static/media/wolf.5381867fc7081a38b505.png",
     "static/media/know.png": "/static/media/know.6cf70f09f017512005ea.png",
     "static/media/stick.png": "/static/media/stick.019e46ecccbf1fcf8a02.png",
+    "static/media/cake.png": "/static/media/cake.dc92ee7009096a444b45.png",
     "static/media/camp.png": "/static/media/camp.85e61593184f0682efd7.png",
     "static/media/jetbrains.png": "/static/media/jetbrains.2b56c87ce12f3813c38c.png",
     "static/media/echo.png": "/static/media/echo.b466dfa2b1beacefed80.png",
     "static/media/cb.png": "/static/media/cb.f042883520ac0fdff275.png",
     "static/media/Solana-Colored.png": "/static/media/Solana-Colored.ced114bf5db913f2f1de.png",
     "static/media/Replit-light-background.png": "/static/media/Replit-light-background.7dfcd85e073f18b57609.png",
-    "static/media/interview.png": "/static/media/interview.452d4f4faf5f1c0c3d0c.png",
-    "static/media/huddle01-logo-blue.svg": "/static/media/huddle01-logo-blue.dab53d34c3986728ccacac1cb77452c1.svg",
+    "static/media/huddle01-logo-blue.svg": "/static/media/huddle01-logo-blue.23285db5581147289f184837a987c9db.svg",
     "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.be9623d5.css",
-    "static/js/main.010fad99.js"
+    "static/js/main.14b0dea8.js"
   ]
 }
