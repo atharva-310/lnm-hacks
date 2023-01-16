@@ -15,7 +15,7 @@ import echo from '../assets/cur-sponsor-logo/echo.png';
 
 // community
 import three from '../assets/cur-sponsor-logo/three.jpg';
-import interview from '../assets/cur-sponsor-logo/interview.png';
+import interview from '../assets/cur-sponsor-logo/cake.png';
 
 export const platinum = [
   {
