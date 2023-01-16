@@ -84,6 +84,12 @@ export const other = [
     logo: echo,
     link: 'https://www.echo3d.com/',
   },
+  {
+    id: 4,
+    name: 'Interview Cake',
+    logo: interview,
+    link: 'https://www.interviewcake.com/',
+  },
 ];
 
 export const community = [
@@ -93,10 +99,4 @@ export const community = [
     logo: three,
     link: 'https://www.threeway.studio/',
   },
-  {
-    id:2,
-    name:'Interview Cake',
-    logo: interview,
-    link: 'https://www.interviewcake.com/',
-  }
 ];

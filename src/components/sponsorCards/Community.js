@@ -30,7 +30,7 @@ export default function Community() {
         mb="8px"
       >
         {' '}
-        Community Sponsors
+        Community Partners
       </Heading>
       <Center width="100%">
         <Box
@@ -54,7 +54,7 @@ export default function Community() {
               <Box
                 my="10px"
                 mx="3px"
-                width={isMobPlatinum ? '40vw' : '160px'}
+                width={isMobPlatinum ? '40vw' : '200px'}
                 height={isMobPlatinum ? '100px' : '130px'}
                 bg="white"
                 rounded="xl"
