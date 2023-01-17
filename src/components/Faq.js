@@ -82,6 +82,7 @@ const FaqPage = () => {
         justifyContent={isTablet ? 'center' : 'space-evenly'}
         flexDirection={isTablet ? 'column' : 'row'}
         // color="white"
+        width="100%"
       >
         <Box
           className="changingGradient1"
@@ -156,7 +157,7 @@ const FaqPage = () => {
         <Box
           // className="changingGradient2"
           minW={isTablet ? '80vw' : '450px'}
-          mx={isTablet ? '0' : '450px'}
+          mx={isTablet ? '10px' : '0px'}
           color={'white'}
           borderRadius="2%"
           py={10}
