@@ -140,7 +140,8 @@ const FaqPage = () => {
       >
         <Box
           className="changingGradient1"
-          minW={isTablet ? '80vw' : '450px'}
+          bg="white"
+          minW={isTablet ? '80vw' : '40%'}
           borderRadius="2%"
           p={10}
         >
@@ -207,7 +208,6 @@ const FaqPage = () => {
                     size="lg"
                     bg="black"
                     onClick={handleSubmit}
-                    // onSubmit={handleSubmit}
                   >
                     Click to Submit
                   </Button>
@@ -218,12 +218,12 @@ const FaqPage = () => {
         </Box>
         <Box
           // className="changingGradient2"
-          minW={isTablet ? '80vw' : '450px'}
+          minW={isTablet ? '80vw' : '40%'}
           mx={isTablet ? '10px' : '0px'}
+          maxW={isTablet ? '' : '40%'}
           color={'white'}
-          borderRadius="2%"
-          py={10}
-          my="20px"
+          borderRadius="xl"
+          margin="30px"
           overflow="auto"
           sx={{
             '&::-webkit-scrollbar': {
@@ -236,7 +236,11 @@ const FaqPage = () => {
             {question.map(item => {
               return (
                 <>
-                  <AccordionItem my={3} key={item.id}>
+                  <AccordionItem
+                    my={3}
+                    key={item.id}
+                    // maxW={isTablet ? '100%' : '500px'}
+                  >
                     <h2>
                       <AccordionButton
                         p={3}
@@ -250,7 +254,9 @@ const FaqPage = () => {
                         <AccordionIcon />
                       </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4}>{item.sol}</AccordionPanel>
+                    <AccordionPanel pb={4} maxW="100%">
+                      {item.sol}
+                    </AccordionPanel>
                   </AccordionItem>
                 </>
               );
