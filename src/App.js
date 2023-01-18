@@ -85,8 +85,9 @@ function App() {
                 <ScrollerBanner />
                 <Register />
                 <Sponsor />
-                <PastSponsor />
+               
                 <Faq />
+               
                 <Divider />
                 <Footer />
               </>

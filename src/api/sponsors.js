@@ -15,6 +15,7 @@ import echo from '../assets/cur-sponsor-logo/echo.png';
 
 // community
 import three from '../assets/cur-sponsor-logo/three.jpg';
+import interview from '../assets/cur-sponsor-logo/cake.png';
 
 export const platinum = [
   {
@@ -82,6 +83,12 @@ export const other = [
     name: 'echo3D',
     logo: echo,
     link: 'https://www.echo3d.com/',
+  },
+  {
+    id: 4,
+    name: 'Interview Cake',
+    logo: interview,
+    link: 'https://www.interviewcake.com/',
   },
 ];
 

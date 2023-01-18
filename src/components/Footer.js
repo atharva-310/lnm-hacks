@@ -59,7 +59,7 @@ export default function Footer() {
 
         <Text textAlign="center" fontSize="md">
           LNMHacks 5.0 Flagship Annual Hackathon of{' '}
-          <Link href="https://www.lnmiit.ac.in/">
+          <Link href="https://www.lnmiit.ac.in/" target="_blank">
             <Text as="u" fontWeight="600">
               The LNM Institute of Information Technology
             </Text>{' '}

@@ -53,7 +53,7 @@ export default function Gold() {
               <Box
                 my="10px"
                 mx="3px"
-                width={isMobPlatinum ? '40vw' : '200px'}
+                width={isMobPlatinum ? '40vw' : '300px'}
                 height={isMobPlatinum ? '150px' : '150px'}
                 bg="white"
                 rounded="xl"

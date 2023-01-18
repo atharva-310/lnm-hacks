@@ -53,9 +53,9 @@ export default function Platinum() {
               <Box
                 my="10px"
                 mx="3px"
-                width={isMobPlatinum ? '80vw' : '350px'}
+                width={isMobPlatinum ? '80vw' : '290px'}
                 // maxW="300px"
-                height={isMobPlatinum ? '120px' : '200px'}
+                height={isMobPlatinum ? '120px' : '180px'}
                 bg="white"
                 rounded="xl"
               >
