@@ -123,7 +123,7 @@ export const Navbar = () => {
                   >
                     Register
                   </Button>
-                  <Button
+                  {/* <Button
                     bg="black"
                     color="white"
                     size="lg"
@@ -132,21 +132,7 @@ export const Navbar = () => {
                     href="mailto:sponsors@lnmhacks.xyz"
                   >
                     Sponsor Us
-                  </Button>
-
-                  {/* <InputGroup minW="200px">
-                    <Input
-                      borderRadius="30px"
-                      pb="4px"
-                      placeholder="Enter Keyword"
-                      _placeholder={{
-                        color: 'white',
-                      }}
-                    />
-                    <InputRightElement
-                      children={<SearchIcon color="black" />}
-                    />
-                  </InputGroup> */}
+                  </Button> */}
                 </HStack>
               </Flex>
             ) : (
@@ -219,7 +205,7 @@ export const Navbar = () => {
                         >
                           Register
                         </Button>
-                        <Button
+                        {/* <Button
                           width="100%"
                           rounded="lg"
                           variant="solid"
@@ -229,7 +215,7 @@ export const Navbar = () => {
                           // onClick={onClose}
                         >
                           Sponsor Us
-                        </Button>
+                        </Button> */}
 
                         <HStack
                           justify="space-evenly"

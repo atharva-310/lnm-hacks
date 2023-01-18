@@ -84,7 +84,7 @@ function App() {
                 <ScrollerBanner />
                 <Register />
                 <Sponsor />
-                <PastSponsor />
+                {/* <PastSponsor /> */}
                 <Divider />
                 <Footer />
               </>

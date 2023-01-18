@@ -40,6 +40,6 @@ const SponsorPage = () => {
 };
 
 const Sponsor = () => {
-  return <MakePage children={<SponsorPage />} id="sponsor" />;
+  return <MakePage children={<SponsorPage />} id="sponsor" pb="50px" />;
 };
 export default Sponsor;
