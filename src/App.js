@@ -18,11 +18,12 @@ import ScrollerBanner from './components/ScrollerBanner';
 import Footer from './components/Footer';
 import Register from './components/Register';
 import Sponsor from './components/Sponsor';
+import Faq from './components/Faq';
 
 function App() {
   const body = useRef(null);
 
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(false);
 
   // useCursor(body);
 
@@ -84,7 +85,9 @@ function App() {
                 <ScrollerBanner />
                 <Register />
                 <Sponsor />
-                {/* <PastSponsor /> */}
+               
+                <Faq />
+               
                 <Divider />
                 <Footer />
               </>
