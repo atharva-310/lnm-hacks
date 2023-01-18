@@ -1,13 +1,13 @@
 import React from 'react';
-import { useState } from 'react';
-// import { send } from 'emailjs-com';
+import { useState, useRef } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import axios from 'axios';
 import MakePage from './Basic/MakePage';
 import {
   Heading,
   Box,
   Center,
-  Flex,
+  FormErrorMessage,
   Input,
   Button,
   Accordion,
@@ -35,41 +35,95 @@ const FaqPage = () => {
     md: true,
     lg: false,
   });
-
+  const [isSubmitting, setSubmit] = useState(false);
   const [toSend, setToSend] = useState({
     name: '',
     email: '',
     question: '',
   });
+  const [formError, setFormError] = useState({
+    isInvalid: false,
+    message: '',
+  });
+  const recaptchaRef = React.useRef();
 
-  const handleSubmit = e => {
-    console.log('clicked');
-    e.preventDefault();
-
-    const data = {
-      Name: toSend.name,
-      Email: toSend.email,
-      Query: toSend.question,
-    };
-    axios
-      .post(
-        'https://sheet.best/api/sheets/9b0e8bf0-1b1c-42d7-8681-63f606f45bc5',
-        data
-      )
-      .then(response => {
-        console.log(response);
+  function emailValidation() {
+    const regex =
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (!toSend.email || regex.test(toSend.email) === false) {
+      setFormError({
+        isInvalid: true,
+        message: 'Email Is Invalid',
       });
+      setSubmit(false);
+      return false;
+    }
+    return true;
+  }
+  const handleSubmit = e => {
+    setSubmit(true);
+    if (
+      toSend.email.trim() === '' ||
+      toSend.name.trim() === '' ||
+      toSend.question.trim() === ''
+    ) {
+      setFormError({
+        isInvalid: true,
+        message: 'Please fill all the field',
+      });
+      setSubmit(false);
+      return;
+    }
+    if (emailValidation()) {
+      const recaptchaValue = recaptchaRef.current.getValue();
+      if (recaptchaValue) {
+        const data = {
+          Name: toSend.name,
+          Email: toSend.email,
+          Query: toSend.question,
+        };
+        setFormError({
+          isInvalid: false,
+          message: '',
+        });
+        axios
+          .post(
+            'https://sheet.best/api/sheets/9b0e8bf0-1b1c-42d7-8681-63f606f45bc5',
+            data
+          )
+          .then(response => {
+            console.log(response);
+            recaptchaRef.current.reset();
+            setToSend({
+              name: '',
+              email: '',
+              question: '',
+            });
+            setSubmit(false);
+          });
+      } else {
+        setFormError({
+          isInvalid: true,
+          message: 'Check reCAPTCHA',
+        });
+        setSubmit(false);
+        return;
+      }
+    }
   };
 
   const handleChange = e => {
-    console.log(e);
+    setFormError({
+      isInvalid: false,
+      message: '',
+    });
+
     setToSend(prevState => {
       return {
         ...prevState,
         [e.target.name]: e.target.value,
       };
     });
-    console.log(toSend);
   };
   return (
     // <Box display={{ md: 'flex' }} flexDirection={{ md: 'column' }}>
@@ -93,10 +147,9 @@ const FaqPage = () => {
           <Heading mb="30px">Ask your queries</Heading>
           <SimpleGrid py={3} columns={2} columnGap={4} rowGap={3}>
             <GridItem colSpan={2}>
-              <form>
+              <FormControl isRequired isInvalid={formError.isInvalid}>
                 <FormLabel py={1}>Name</FormLabel>
                 <Input
-                  color="white"
                   size="lg"
                   variant="outline"
                   borderColor="black"
@@ -106,12 +159,12 @@ const FaqPage = () => {
                   focusBorderColor="gray.600"
                   fontFamily="Inter,sans-serif"
                   mb="20px"
+                  type="name"
                   name="name"
                   onChange={handleChange}
                 />
                 <FormLabel py={1}>Email</FormLabel>
                 <Input
-                  color="white"
                   variant="outline"
                   size="lg"
                   border="2px solid black"
@@ -119,13 +172,13 @@ const FaqPage = () => {
                   borderColor="black"
                   focusBorderColor="gray.600"
                   mb="20px"
+                  type="email"
                   name="email"
                   value={toSend.email}
                   onChange={handleChange}
                 />
                 <FormLabel py={1}>Question/Query</FormLabel>
                 <Textarea
-                  color="white"
                   variant="outline"
                   size="lg"
                   border="2px solid black"
@@ -137,8 +190,16 @@ const FaqPage = () => {
                   value={toSend.question}
                   onChange={handleChange}
                 />
-                <GridItem p={5}>
+                <FormErrorMessage>{formError.message}</FormErrorMessage>
+                <GridItem py={5}>
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey="6Le17QckAAAAAD6KjyA_HEDhmmokxOMGqL9X79Wv"
+                  />
+                  ,
                   <Button
+                    isLoading={isSubmitting}
+                    type="submit"
                     _hover={{ bg: 'gray.600' }}
                     w="full"
                     variant="solid"
@@ -146,11 +207,12 @@ const FaqPage = () => {
                     size="lg"
                     bg="black"
                     onClick={handleSubmit}
+                    // onSubmit={handleSubmit}
                   >
                     Click to Submit
                   </Button>
                 </GridItem>
-              </form>
+              </FormControl>
             </GridItem>
           </SimpleGrid>
         </Box>
