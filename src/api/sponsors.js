@@ -12,11 +12,11 @@ import sola from '../assets/cur-sponsor-logo/Solana-Colored.png';
 import task from '../assets/cur-sponsor-logo/logo_taskade_black.png';
 import xyz from '../assets/cur-sponsor-logo/xyz-logo-color.png';
 import echo from '../assets/cur-sponsor-logo/echo.png';
-
-// community
-import three from '../assets/cur-sponsor-logo/three.jpg';
 import interview from '../assets/cur-sponsor-logo/cake.png';
 
+// community
+import three from '../assets/cur-sponsor-logo/three.png';
+import meso from '../assets/cur-sponsor-logo/meso.png';
 export const platinum = [
   {
     id: 1,
@@ -98,5 +98,11 @@ export const community = [
     name: 'Threeway Studio',
     logo: three,
     link: 'https://www.threeway.studio/',
+  },
+  {
+    id: 2,
+    name: 'Meso Hacks',
+    logo: meso,
+    link: 'https://www.mesohacks.co/',
   },
 ];

@@ -39,6 +39,7 @@ const navItems = [
   { name: 'Home', id: '#home' },
   { name: 'About', id: '#about' },
   { name: 'Sponsors', id: '#sponsor' },
+  { name: 'FAQs', id: '#faq' },
 ];
 export const Navbar = () => {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
