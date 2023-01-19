@@ -19,6 +19,7 @@ import Footer from './components/Footer';
 import Register from './components/Register';
 import Sponsor from './components/Sponsor';
 import Faq from './components/Faq';
+import Venue from './components/venue';
 
 function App() {
   const body = useRef(null);
@@ -85,9 +86,8 @@ function App() {
                 <ScrollerBanner />
                 <Register />
                 <Sponsor />
-               
                 <Faq />
-               
+                <Venue />
                 <Divider />
                 <Footer />
               </>

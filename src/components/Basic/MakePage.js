@@ -14,8 +14,10 @@ export default function MakePage({ children, id, ...props }) {
       >
         <Box
           pt="120px"
-          minH="80vh"
+          // minH="80vh"
+          // maxH="1000px"
           width={isDesktop ? '80vw' : '90vw'}
+          maxW="1500px"
           {...props}
         >
           {children}

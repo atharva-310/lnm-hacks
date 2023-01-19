@@ -16,7 +16,7 @@ function RegisterPage() {
   return (
     <Center
       className="changingGradient"
-      minH="30vh"
+      minH="400px"
       rounded="xl"
       width={isDesktop ? '80%' : '100%'}
       flexDir="column"
@@ -56,7 +56,7 @@ export default function Register() {
       display="flex"
       flexDirection="row"
       justifyContent={'center'}
-      minH="70vh"
+      // minH="70vh"
     />
   );
 }

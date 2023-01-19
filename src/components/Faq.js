@@ -139,6 +139,7 @@ const FaqPage = () => {
         width="100%"
       >
         <Box
+        color='black'
           className="changingGradient1"
           bg="white"
           minW={isTablet ? '80vw' : '40%'}
@@ -269,5 +270,5 @@ const FaqPage = () => {
 };
 
 export default function Faq() {
-  return <MakePage id="faq" children={<FaqPage />} mb="60px" />;
+  return <MakePage id="faq" children={<FaqPage />} />;
 }
