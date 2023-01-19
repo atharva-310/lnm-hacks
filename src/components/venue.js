@@ -23,19 +23,23 @@ const VenuePage = () => {
 
   return (
     <>
-      <H1Gradient content={'Venue'} />
+      <H1Gradient  content={'Venue'} />
       <Center>
-        <Box
-          margin="10px"
+        <Box display="flex"
+        justifyContent={isTablet ? 'center' : 'space-evenly'}
+        flexDirection={isTablet ? 'column' : 'row'}
+        // color="white"
+        // width={isTablet?'90vw':'full'}
+        margin="30px"
           // bgImage={VenueB}
           bg="white"
           //bg=' linear-gradient(128deg, rgba(131,58,180,1) 0%, rgba(253,29,143,0.6475840336134453) 50%, rgba(252,176,69,1) 100%);'
           //   minW={isTablet ? '100vw' : 'full'}
           //   minH={isTablet? '100vh':'full'}
           // borderRadius="2%"
-          display="flex"
-          flexDirection="row"
-          justifyContent="space-between"
+          // display="flex"
+          // flexDirection="row"
+          // justifyContent="space-between"
           rounded="xl"
           padding="20px"
         >
@@ -43,7 +47,7 @@ const VenuePage = () => {
             justifyContent="center"
             padding="40px"
             pr="60px"
-            width="550px"
+            width={isTablet?'full':'550px'}
             height="550px"
             // textAlign="center"
           >
@@ -63,7 +67,7 @@ const VenuePage = () => {
               </Button>
             </Box>
           </VStack>
-          <Box width="600px" height="550px">
+          <Box width={isTablet? 'full':'600px'} height={isTablet? 'full':'550px'} >
             <Image src={venue} height="100%" width="100%" rounded={'xl'} />
           </Box>
         </Box>
