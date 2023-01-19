@@ -10,7 +10,7 @@ import {
   VStack,
   Button,
 } from '@chakra-ui/react';
-import VenueB from '../assets/venueImage/venueB.jpg';
+
 import venue from '../assets/venueImage/venue1.jpg';
 import H1Gradient from './Basic/H1Gradient';
 const VenuePage = () => {
@@ -23,56 +23,63 @@ const VenuePage = () => {
 
   return (
     <>
-      <H1Gradient content={'Venue'} />
-      <Center>
-        <Box
-          display="flex"
-          justifyContent={isTablet ? 'center' : 'space-evenly'}
-          flexDirection={isTablet ? 'column' : 'row'}
-          // color="white"
-          // width={isTablet?'90vw':'full'}
-          margin="30px"
-          // bgImage={VenueB}
-          bg="white"
-          rounded="xl"
-          padding="20px"
-        >
-          <VStack
-            justifyContent="center"
-            padding="40px"
-            pr="60px"
-            width={isTablet ? 'full' : '550px'}
-            height="550px"
-            // textAlign="center"
-          >
-            <Heading as={'h2'} color="black">
-              The LNM Institute Of Information Technology
-            </Heading>
-            <Heading as={'h2'} width="100%" color="black" mt="10px">
-              LNMIIT
-            </Heading>
-            <Heading as={'h4'} width="100%" fontSize="lg" color="gray">
-              Rupa ki Nangal, Jaipur, Rajasthan
-            </Heading>
+      <H1Gradient content={'Venue'} mb="50px" />
 
-            <Box width="100%" height="100px" py={'20px'}>
-              <Button bg="black" color="white">
-                Get Directions
-              </Button>
-            </Box>
-          </VStack>
-          <Box
-            width={isTablet ? 'full' : '600px'}
-            height={isTablet ? 'full' : '550px'}
-          >
-            <Image src={venue} height="100%" width="100%" rounded={'xl'} />
+      <Box
+        display="flex"
+        flexWrap="wrap"
+        justifyContent={isTablet ? 'center' : 'space-evenly'}
+        flexDirection={isTablet ? 'column' : 'row'}
+        my="40px"
+        width={'100%'}
+        bg="white"
+        rounded="xl"
+        padding="20px"
+        py="40px"
+      >
+        <VStack
+          justifyContent="center"
+          padding={isTablet ? '10px' : '40px'}
+          pr={isTablet ? '10px' : '60px'}
+          width={isTablet ? '100%' : '40%'}
+          // textAlign="center"
+        >
+          <Heading as={'h2'} color="black">
+            The LNM Institute Of Information Technology
+          </Heading>
+          <Heading as={'h2'} width="100%" color="black" mt="10px">
+            LNMIIT
+          </Heading>
+          <Heading as={'h4'} width="100%" fontSize="lg" color="gray">
+            Rupa ki Nangal, Jaipur, Rajasthan
+          </Heading>
+
+          <Box width="100%" height="100px" py={'20px'}>
+            <Button
+              bg="black"
+              color="white"
+              as="a"
+              href="https://goo.gl/maps/zBz2p7g6TxDMAc1n8"
+              target="_blank"
+            >
+              Get Directions
+            </Button>
           </Box>
-        </Box>
-      </Center>
+        </VStack>
+        <Center width={isTablet ? '100%' : '55%'} px={isTablet ? '10px' : ''}>
+          <Image
+            src={venue}
+            height={['200px', '300px', '450px']}
+            objectFit="cover"
+            objectPosition={'center'}
+            rounded={'xl'}
+          />
+        </Center>
+      </Box>
     </>
   );
 };
 
 export default function Venue() {
-  return <MakePage id="faq" children={<VenuePage />} mb="100px" />;
+  return <MakePage id="venue" children={<VenuePage />} mb="100px" />;
 }
