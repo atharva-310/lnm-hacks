@@ -29,7 +29,7 @@ const VenuePage = () => {
         justifyContent={isTablet ? 'center' : 'space-evenly'}
         flexDirection={isTablet ? 'column' : 'row'}
         // color="white"
-        // width={isTablet?'90vw':'full'}
+         width={isTablet?'90vw':'full'}
         margin="30px"
           // bgImage={VenueB}
           bg="white"
@@ -48,7 +48,6 @@ const VenuePage = () => {
             padding="40px"
             pr="60px"
             width={isTablet?'full':'550px'}
-            height="550px"
             // textAlign="center"
           >
             <Heading as={'h2'} color="black">

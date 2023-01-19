@@ -139,6 +139,7 @@ const FaqPage = () => {
         width="100%"
       >
         <Box
+        color='black'
           className="changingGradient1"
           bg="white"
           minW={isTablet ? '80vw' : '40%'}
