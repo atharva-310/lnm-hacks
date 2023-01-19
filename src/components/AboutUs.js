@@ -71,5 +71,5 @@ const AboutUsPage = () => {
   );
 };
 export default function AboutUs() {
-  return <MakePage children={<AboutUsPage />} minH="90vh" id="about" />;
+  return <MakePage children={<AboutUsPage />} id="about" />;
 }

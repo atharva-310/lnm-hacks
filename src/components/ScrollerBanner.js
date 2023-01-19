@@ -60,7 +60,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function ScrollerBanner() {
   return (
-    <Box position="relative">
+    <Box position="relative" my="30px">
       <ParallaxText baseVelocity={0.3}>
         {' '}
         Hackathon blockchain Defi DAO nft gaming innovation community

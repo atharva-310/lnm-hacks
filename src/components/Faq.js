@@ -270,5 +270,5 @@ const FaqPage = () => {
 };
 
 export default function Faq() {
-  return <MakePage id="faq" children={<FaqPage />} mb="60px" />;
+  return <MakePage id="faq" children={<FaqPage />} />;
 }
