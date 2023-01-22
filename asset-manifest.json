@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c40e73a4.css",
-    "main.js": "/static/js/main.44cc8844.js",
+    "main.js": "/static/js/main.9637b7e6.js",
     "static/media/hero-new.png": "/static/media/hero-new.59842279ccf78289ead8.png",
     "static/media/hero-new-mob.png": "/static/media/hero-new-mob.636b31493fa5be7e5e60.png",
     "static/media/aboutImg.png": "/static/media/aboutImg.0a3a527c4b300e38926e.png",
@@ -25,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.c40e73a4.css",
-    "static/js/main.44cc8844.js"
+    "static/js/main.9637b7e6.js"
   ]
 }
