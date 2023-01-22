@@ -139,7 +139,7 @@ const FaqPage = () => {
         width="100%"
       >
         <Box
-        color='black'
+          color="black"
           className="changingGradient1"
           bg="white"
           minW={isTablet ? '80vw' : '40%'}
@@ -220,11 +220,11 @@ const FaqPage = () => {
         <Box
           // className="changingGradient2"
           minW={isTablet ? '80vw' : '40%'}
+          my="30px"
           mx={isTablet ? '10px' : '0px'}
           maxW={isTablet ? '' : '40%'}
           color={'white'}
           borderRadius="xl"
-          margin="30px"
           overflow="auto"
           sx={{
             '&::-webkit-scrollbar': {
