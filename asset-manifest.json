@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c40e73a4.css",
-    "main.js": "/static/js/main.9637b7e6.js",
+    "main.js": "/static/js/main.017250e2.js",
+    "static/media/trikon.png": "/static/media/trikon.13df900c1d505716d7b9.png",
     "static/media/hero-new.png": "/static/media/hero-new.59842279ccf78289ead8.png",
     "static/media/hero-new-mob.png": "/static/media/hero-new-mob.636b31493fa5be7e5e60.png",
     "static/media/aboutImg.png": "/static/media/aboutImg.0a3a527c4b300e38926e.png",
@@ -13,18 +14,23 @@
     "static/media/wolf.png": "/static/media/wolf.5381867fc7081a38b505.png",
     "static/media/know.png": "/static/media/know.6cf70f09f017512005ea.png",
     "static/media/stick.png": "/static/media/stick.019e46ecccbf1fcf8a02.png",
+    "static/media/spheron.jpg": "/static/media/spheron.0fb0ac1a5b36449fc6fe.jpg",
     "static/media/cake.png": "/static/media/cake.dc92ee7009096a444b45.png",
     "static/media/camp.png": "/static/media/camp.85e61593184f0682efd7.png",
+    "static/media/deepVerse.jpg": "/static/media/deepVerse.6b1a220d1d9c666663ec.jpg",
     "static/media/jetbrains.png": "/static/media/jetbrains.2b56c87ce12f3813c38c.png",
     "static/media/echo.png": "/static/media/echo.b466dfa2b1beacefed80.png",
     "static/media/cb.png": "/static/media/cb.f042883520ac0fdff275.png",
     "static/media/Solana-Colored.png": "/static/media/Solana-Colored.ced114bf5db913f2f1de.png",
     "static/media/Replit-light-background.png": "/static/media/Replit-light-background.7dfcd85e073f18b57609.png",
+    "static/media/unilend.svg": "/static/media/unilend.17f05778c83c819ad51c7ed1353af899.svg",
     "static/media/huddle01-logo-blue.svg": "/static/media/huddle01-logo-blue.23285db5581147289f184837a987c9db.svg",
-    "index.html": "/index.html"
+    "static/media/axure.svg": "/static/media/axure.db52d9ce6945dbd84667ad22d183a1d7.svg",
+    "index.html": "/index.html",
+    "static/media/zeeve.svg": "/static/media/zeeve.b71d91de99a5e046d75d66a6726825b1.svg"
   },
   "entrypoints": [
     "static/css/main.c40e73a4.css",
-    "static/js/main.9637b7e6.js"
+    "static/js/main.017250e2.js"
   ]
 }
