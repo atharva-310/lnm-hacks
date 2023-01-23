@@ -24,7 +24,7 @@ import Venue from './components/venue';
 function App() {
   const body = useRef(null);
 
-  const [isLoading, setLoading] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
   // useCursor(body);
 

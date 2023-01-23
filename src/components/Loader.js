@@ -8,10 +8,12 @@ export default function Loader() {
   const bar = useRef();
   const root = useRef();
   const title = useRef();
-  const items = ['Build', 'Learn', 'Network', 'Talks'];
+  const items = ['Build', 'Learn', 'Network', 'Grow'];
+
   useEffect(() => {
     setRight(`${title.current.offsetLeft}px`);
   }, []);
+
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       var tLine = gsap.timeline();
