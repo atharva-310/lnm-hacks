@@ -99,12 +99,12 @@ export const gold = [
     logo: unilend,
     link: 'https://unilend.finance/',
   },
-  {
-    id: 7,
-    name: 'zeeve',
-    logo: zeeve,
-    link: 'https://www.zeeve.io/',
-  },
+  // {
+  //   id: 7,
+  //   name: 'zeeve',
+  //   logo: zeeve,
+  //   link: 'https://www.zeeve.io/',
+  // },
   {
     id: 8,
     name: 'trikon',
