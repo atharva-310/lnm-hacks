@@ -27,7 +27,9 @@ import LF from '../assets/logo-sponser/cf-logo-v-rgb.png';
 import three from '../assets/cur-sponsor-logo/three.png';
 import meso from '../assets/cur-sponsor-logo/meso.png';
 import aws from '../assets/cur-sponsor-logo/aws.png';
-import blueLearn from '../assets/cur-sponsor-logo/blueLearn.png';
+import debug from '../assets/cur-sponsor-logo/debug.png';
+// import blueLearn from '../assets/cur-sponsor-logo/blueLearn.png';
+
 export const platinum = [
   {
     id: 1,
@@ -170,6 +172,12 @@ export const community = [
     name: 'Aws',
     logo: aws,
     link: 'https://aws.amazon.com/',
+  },
+  {
+    id: 5,
+    name: 'debug',
+    logo: debug,
+    link: 'https://www.instagram.com/debugclub/?hl=en',
   },
   // {
   //   id: 4,
