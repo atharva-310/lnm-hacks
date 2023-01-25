@@ -171,10 +171,10 @@ export const community = [
     logo: aws,
     link: 'https://aws.amazon.com/',
   },
-  {
-    id: 4,
-    name: 'blue Learn',
-    logo: blueLearn,
-    link: 'https://www.bluelearn.in/',
-  },
+  // {
+  //   id: 4,
+  //   name: 'blue Learn',
+  //   logo: blueLearn,
+  //   link: 'https://www.bluelearn.in/',
+  // },
 ];
