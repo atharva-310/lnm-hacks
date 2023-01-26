@@ -3,7 +3,7 @@ import MakePage from './Basic/MakePage';
 import { data } from '../api/tracks';
 import { motion } from 'framer-motion';
 import defiTracks from '../assets/cur-sponsor-logo/defiTracks.png';
-import prize from '../assets/prizeImage.png'
+import prize from '../assets/prizeImage.png';
 import {
   useBreakpointValue,
   Center,
@@ -29,32 +29,42 @@ const TracksPage = () => {
     md: false,
     lg: false,
   });
-
+  const isMob = useBreakpointValue({
+    base: true,
+    sm: false,
+    md: false,
+    lg: false,
+  });
   return (
     <>
       <H1Gradient content={'Bounties'} mb="30px" />
-      
+
       <Center>
         <Flex
           flexDir={isTablet ? 'column' : 'row'}
           flexWrap="wrap"
           justifyContent={isTablet ? 'center' : 'space-evenly'}
+          mb="40px"
         >
           {data.map(item => {
             return (
               <VStack
                 m={'10px'}
-                padding="20px"
+                padding="25px"
                 bgColor="white"
-                rounded="20px"
-                width="300px"
+                // rounded="xl"
+                width={isMob ? '85vw' : '300px'}
                 key={item.id}
               >
-                <Box  color='black' 
-                width='100%'
-
-                >
-                   <Image src={defiTracks} />
+                <Box color="black" width="100%" mb="14px">
+                  <Image
+                    src={defiTracks}
+                    widht="100%"
+                    objectFit="cover"
+                    style={{
+                      width: '100%',
+                    }}
+                  />
                 </Box>
                 <Heading
                   as={'h2'}
@@ -67,10 +77,14 @@ const TracksPage = () => {
                   {item.Heading}
                 </Heading>
                 <Text
+                  width="100%"
                   fontFamily=" 'Inter', sans-seri"
-                  fontSize='sm'
+                  fontSize="md"
                   fontWeight="500"
+                  fontStyle={'bold'}
                   color="black"
+                  px="4px"
+                  mt="0px"
                 >
                   {item.text}
                 </Text>

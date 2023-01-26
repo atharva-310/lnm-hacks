@@ -86,7 +86,7 @@ export const bounty = [
   {
     id: 11,
     name: 'Replit',
-    logo: sola,
+    logo: rep,
     link: 'https://replit.com/',
     bounty: '$50',
   },
