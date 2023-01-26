@@ -2,6 +2,8 @@ import React from 'react';
 import MakePage from './Basic/MakePage';
 import { data } from '../api/tracks';
 import { motion } from 'framer-motion';
+import defiTracks from '../assets/cur-sponsor-logo/defiTracks.png';
+import prize from '../assets/prizeImage.png';
 
 import {
   useBreakpointValue,
@@ -28,42 +30,62 @@ const TracksPage = () => {
     md: false,
     lg: false,
   });
-
+  const isMob = useBreakpointValue({
+    base: true,
+    sm: false,
+    md: false,
+    lg: false,
+  });
   return (
     <>
-      <H1Gradient content={'Bounties'} mb="30px" />
-      {/* 
+      <H1Gradient content={'Tracks & Bounties'} mb="30px" />
+
       <Center>
         <Flex
           flexDir={isTablet ? 'column' : 'row'}
           flexWrap="wrap"
           justifyContent={isTablet ? 'center' : 'space-evenly'}
+          mb="40px"
         >
           {data.map(item => {
             return (
               <VStack
                 m={'10px'}
-                padding="30px"
+                padding="25px"
                 bgColor="white"
-                rounded="20px"
-                width="300px"
+                // rounded="xl"
+                width={isMob ? '85vw' : '300px'}
                 key={item.id}
               >
+                <Box color="black" width="100%" mb="14px">
+                  <Image
+                    src={item.src}
+                    widht="100%"
+                    objectFit="cover"
+                    style={{
+                      width: '100%',
+                    }}
+                  />
+                </Box>
                 <Heading
                   as={'h2'}
                   fontFamily=" 'Inter', sans-seri"
                   fontWeight="700"
-                  fontSize="4xl"
+                  fontSize="3xl"
                   color="black"
                   width="100%"
                 >
                   {item.Heading}
                 </Heading>
                 <Text
+                  width="100%"
                   fontFamily=" 'Inter', sans-seri"
-                  fontSize="20px"
+                  fontSize="md"
                   fontWeight="500"
+                  fontStyle={'bold'}
                   color="black"
+                  px="4px"
+                  mt="0px"
                 >
                   {item.text}
                 </Text>
@@ -71,7 +93,7 @@ const TracksPage = () => {
             );
           })}
         </Flex>
-      </Center> */}
+      </Center>
 
       {/* Bounties */}
       <Flex flexDir="row" flexWrap="wrap" justifyContent={'space-evenly'}>

@@ -30,7 +30,7 @@ export const bounty = [
     name: 'Gari',
     logo: gari,
     link: 'https://gari.network/',
-    bounty: '$800',
+    bounty: '$500',
   },
 
   {
@@ -86,7 +86,7 @@ export const bounty = [
   {
     id: 11,
     name: 'Replit',
-    logo: sola,
+    logo: rep,
     link: 'https://replit.com/',
     bounty: '$50',
   },
