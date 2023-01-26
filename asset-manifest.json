@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d8819f84.css",
-    "main.js": "/static/js/main.8dbe1d49.js",
+    "main.js": "/static/js/main.559dd89e.js",
     "static/media/trikon.png": "/static/media/trikon.13df900c1d505716d7b9.png",
     "static/media/hero-new.png": "/static/media/hero-new.59842279ccf78289ead8.png",
     "static/media/hero-new-mob.png": "/static/media/hero-new-mob.636b31493fa5be7e5e60.png",
@@ -38,13 +38,13 @@
     "static/media/aws1.png": "/static/media/aws1.779397544e0d871d0150.png",
     "static/media/Replit-light-background.png": "/static/media/Replit-light-background.7dfcd85e073f18b57609.png",
     "static/media/unilend.svg": "/static/media/unilend.139f6191a11482833fd88730284a4d7e.svg",
-    "static/media/huddle01-logo-blue.svg": "/static/media/huddle01-logo-blue.dab53d34c3986728ccacac1cb77452c1.svg",
+    "static/media/huddle01-logo-blue.svg": "/static/media/huddle01-logo-blue.23285db5581147289f184837a987c9db.svg",
     "static/media/axure.svg": "/static/media/axure.db52d9ce6945dbd84667ad22d183a1d7.svg",
     "index.html": "/index.html",
     "static/media/zeeve.svg": "/static/media/zeeve.b71d91de99a5e046d75d66a6726825b1.svg"
   },
   "entrypoints": [
     "static/css/main.d8819f84.css",
-    "static/js/main.8dbe1d49.js"
+    "static/js/main.559dd89e.js"
   ]
 }
