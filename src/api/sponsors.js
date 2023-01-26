@@ -187,7 +187,7 @@ export const community = [
     id: 3,
     name: 'Aws',
     logo: aws1,
-    link: 'https://aws.amazon.com/',
+    link: 'https://www.linkedin.com/company/awsjaipur/',
   },
   {
     id: 5,
