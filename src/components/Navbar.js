@@ -38,6 +38,7 @@ import { AiFillHeart } from 'react-icons/ai';
 const navItems = [
   { name: 'Home', id: '#home' },
   { name: 'About', id: '#about' },
+  { name: 'Bounties', id: '#tracks' },
   { name: 'Sponsors', id: '#sponsor' },
   { name: 'FAQs', id: '#faq' },
   { name: 'Venue', id: '#venue' },

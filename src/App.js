@@ -86,10 +86,10 @@ function App() {
                 <AboutUs />
                 <ScrollerBanner />
                 <Register />
+                <Tracks />
                 <Sponsor />
                 <Faq />
                 <Venue />
-                <Tracks />
                 <Divider />
                 <Footer />
               </>
