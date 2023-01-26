@@ -51,7 +51,7 @@ const TracksPage = () => {
                 // minH={isTablet ? '80vh' : '510px'}
                 key={item.id}
               >
-                <Flex
+                {/* <Flex
                   justifyContent="space-between"
                   width="100%"
                   alignItems="center"
@@ -73,7 +73,7 @@ const TracksPage = () => {
                     height="40px"
                     borderRadius="50px"
                   ></Box>
-                </Flex>
+                </Flex> */}
 
                 <Heading
                   as={'h2'}
@@ -202,8 +202,9 @@ const TracksPage = () => {
               <Box
                 my="10px"
                 mx="3px"
-                width={isTablet ? '40vw' : '300px'}
-                height={isTablet ? '150px' : '200px'}
+                // width={isTablet ? '20vw' : '200px'}
+                width={['40vw', '40vw', '20vw', '20vw', '200px']}
+                height={isTablet ? '130px' : '130px'}
                 bg="white"
                 rounded="xl"
               >

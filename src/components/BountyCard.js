@@ -7,11 +7,11 @@ export function BountyCard(props) {
       height="100%"
       p="20px"
       flexDirection="column"
-      justifyContent="space-evenly"
+      justifyContent="space-between"
     >
       <Image
         maxW="80%"
-        height="80px"
+        height="40px"
         src={props.data.logo}
         size="contain"
         objectFit="contain"
@@ -21,7 +21,7 @@ export function BountyCard(props) {
         bg="black"
         color="white"
         rounded="xl"
-        fontSize="3xl"
+        fontSize="xl"
         p="10px"
         textAlign="center"
       >
