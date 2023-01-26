@@ -53,7 +53,7 @@ const TracksPage = () => {
                 m={'10px'}
                 padding="25px"
                 bgColor="white"
-                // rounded="xl"
+                rounded="10px"
                 width={isMob ? '85vw' : '300px'}
                 key={item.id}
               >
