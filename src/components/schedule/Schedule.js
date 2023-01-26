@@ -1,88 +1,158 @@
-import { Box, Center, Heading, HStack, useBreakpointValue, VStack } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import d1 from '../../assets/sch-d1.png'
-export default function Schedule() {
-  const isDesktop = useBreakpointValue({ base: false, lg: true });
+import {
+  Box,
+  Center,
+  HStack,
+  VStack,
+  Divider,
+  Text,
+  Heading,
+  useBreakpointValue,
+} from '@chakra-ui/react';
+import { useState } from 'react';
+import { jan27 } from '../../api/schedule';
+import H1Gradient from '../Basic/H1Gradient';
+import MakePage from '../Basic/MakePage';
+import Jan27 from './Jan27';
+import Jan28 from './Jan28';
+import Jan29 from './Jan29';
+
+const SchedulePage = () => {
+  const [curId, setId] = useState(27);
+  const isMobPlatinum = useBreakpointValue({
+    base: true,
+    sm: true,
+    md: true,
+    lg: false,
+  });
+  console.log(isMobPlatinum);
 
   return (
-    < Box 
-      mx={isDesktop ? '10vw' : '5vw'}
-      pt="15vh"
-      minH="100vh"
-      maxW="1500px" 
-      justifyContent="center"
-    >
-      <Heading mb="10px"> Schedule</Heading>
-      <Box
-        width={isDesktop ? '80vw' : '90vw'}
-        maxW="1500px"
-        rounded={"xl"}
-        minH="70vh"
-        bg="#9BDDF4"
-        bgImage={d1}
-        bgSize="contain"
-        bgRepeat="no-repeat"
-        bgPosition="right top"
-      >
-        <HStack 
-          padding={"10px"}
+    <>
+      <H1Gradient content={'Schedule'} mb="80px" />
+      <Center>
+        <VStack
+          width="100%"
+          maxW="1000px"
+          minH="400px"
+          px="20px"
+          pb="50px"
+          bg="white"
+          boxShadow="5px 7px 0px #E61B1B"
+          borderRadius="20px"
+          transition={'Height 0.05s'}
         >
-          
-          <Center 
-            w="60px" 
-            h="60px" 
-            rounded={"xl"}
-            bgColor="white"
-            fontWeight="700"
-            // color="red"
-            textAlign="center"
+          <HStack
+            width="100%"
+            justifyContent="space-evenly"
+            position="relative"
+            top="-30px"
           >
-            Jan
-            <br/>
-            8
-          </Center>
-          <Center 
-            w="60px" 
-            h="60px" 
-            rounded={"xl"}
-            bgColor="white"
-            fontWeight="700"
-            // color="red"
-            textAlign="center"
-          >
-            Jan
-            <br/>
-            10
-          </Center>
-        </HStack>
-        <motion.div
-          style={{
-            width: "60px",
-            height: "60px"
-          }}
-          // initial={{ opacity: 1 }}
-          whileHover={{ scale: 1.2}}
-        >
-          <Center 
-            w="60px" 
-            h="60px" 
-            rounded={"xl"}
-            bgColor="white"
-            fontWeight="700"
-            // color="red"
-            textAlign="center"
-          >
-            Jan
-            <br/>
-            10
-          </Center>
-        </motion.div>
-        {/* <VStack>
-          <Box >
+            <HStack width="50%" justifyContent="center">
+              <Box
+                height="60px"
+                width="20px"
+                borderRadius="20px"
+                bg="#E61B1B"
+              ></Box>
+              <Box
+                height="60px"
+                width="20px"
+                borderRadius="20px"
+                bg="#E61B1B"
+              ></Box>
+              <Box
+                height="60px"
+                width="20px"
+                borderRadius="20px"
+                bg="#E61B1B"
+              ></Box>
+            </HStack>
+            <HStack width="50%" justifyContent="center">
+              <Box
+                height="60px"
+                width="20px"
+                borderRadius="20px"
+                bg="#E61B1B"
+              ></Box>
+              <Box
+                height="60px"
+                width="20px"
+                borderRadius="20px"
+                bg="#E61B1B"
+              ></Box>
+              <Box
+                height="60px"
+                width="20px"
+                borderRadius="20px"
+                bg="#E61B1B"
+              ></Box>
+            </HStack>
+          </HStack>
+          <Box width="95%" minH="350px" border="2px solid #000000" rounded="xl">
+            <HStack
+              width="100%"
+              height="80px"
+              px="10px"
+              justifyContent="space-evenly"
+              cursor="pointer"
+            >
+              <Heading
+                textAlign="center"
+                color={curId === 27 ? 'black' : 'gray'}
+                _hover={{ transform: 'scale(1.1)' }}
+                onClick={() => {
+                  setId(27);
+                }}
+              >
+                {' '}
+                27 Jan
+              </Heading>
+              <Box bg="black" height="100%" width="2px"></Box>
 
+              <Heading
+                textAlign="center"
+                color={curId === 28 ? 'black' : 'gray'}
+                _hover={{ transform: 'scale(1.1)' }}
+                onClick={() => {
+                  setId(28);
+                }}
+              >
+                {' '}
+                28 Jan
+              </Heading>
+              <Box bg="black" height="100%" width="2px"></Box>
+              <Heading
+                textAlign="center"
+                color={curId === 29 ? 'black' : 'gray'}
+                _hover={{ transform: 'scale(1.1)' }}
+                onClick={() => {
+                  setId(29);
+                }}
+              >
+                {' '}
+                29 Jan
+              </Heading>
+            </HStack>
+            <Box width="100%" bg="black" height="2px"></Box>
+
+            {curId === 27 && <Jan27 />}
+            {curId === 28 && <Jan28 />}
+            {curId === 29 && <Jan29 />}
           </Box>
-        </VStack> */}
-      </Box>
-    </Box>
+        </VStack>
+      </Center>
+    </>
   );
-}
+};
+
+const Schedule = () => {
+  return (
+    <MakePage
+      children={<SchedulePage />}
+      id="schedule"
+      pb="50px"
+      height="auto"
+    />
+  );
+};
+export default Schedule;
