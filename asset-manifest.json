@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.c40e73a4.css",
-    "main.js": "/static/js/main.67ebd60f.js",
+    "main.css": "/static/css/main.d8819f84.css",
+    "main.js": "/static/js/main.b2e50753.js",
     "static/media/trikon.png": "/static/media/trikon.13df900c1d505716d7b9.png",
     "static/media/hero-new.png": "/static/media/hero-new.59842279ccf78289ead8.png",
     "static/media/hero-new-mob.png": "/static/media/hero-new-mob.636b31493fa5be7e5e60.png",
     "static/media/aboutImg.png": "/static/media/aboutImg.0a3a527c4b300e38926e.png",
     "static/media/meso.png": "/static/media/meso.611125cd4fb2dde12dcb.png",
+    "static/media/xdc.png": "/static/media/xdc.fbf3117ae98e0aebdb57.png",
     "static/media/venue1.jpg": "/static/media/venue1.0310bae1ebf4bdfa18d8.jpg",
     "static/media/saturn.png": "/static/media/saturn.26cd920d856d8aa37597.png",
+    "static/media/openIno.png": "/static/media/openIno.a95d32a2e76d236a0a93.png",
     "static/media/du.png": "/static/media/du.d0a7402b41a023d5baf8.png",
     "static/media/git.png": "/static/media/git.b5de6db994b1a24f17cd.png",
     "static/media/wolf.png": "/static/media/wolf.5381867fc7081a38b505.png",
@@ -31,7 +33,7 @@
     "static/media/zeeve.svg": "/static/media/zeeve.b71d91de99a5e046d75d66a6726825b1.svg"
   },
   "entrypoints": [
-    "static/css/main.c40e73a4.css",
-    "static/js/main.67ebd60f.js"
+    "static/css/main.d8819f84.css",
+    "static/js/main.b2e50753.js"
   ]
 }
