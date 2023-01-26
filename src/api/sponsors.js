@@ -14,7 +14,9 @@ import spheron from '../assets/cur-sponsor-logo/spheron.jpg';
 import tezo from '../assets/cur-sponsor-logo/tezo.png';
 import unilend from '../assets/cur-sponsor-logo/unilend.svg';
 import zeeve from '../assets/cur-sponsor-logo/zeeve.svg';
+import xdc from '../assets/cur-sponsor-logo/xdc.png';
 import trikon from '../assets/cur-sponsor-logo/trikon.png';
+import gari from '../assets/cur-sponsor-logo/gari.jpg'
 // other
 import task from '../assets/cur-sponsor-logo/logo_taskade_black.png';
 import xyz from '../assets/cur-sponsor-logo/xyz-logo-color.png';
@@ -112,6 +114,19 @@ export const gold = [
     name: 'trikon',
     logo: trikon,
     link: 'https://trikon.io/',
+  },
+
+  {
+    id: 10,
+    name: 'XDC',
+    logo: xdc,
+    link: 'https://xinfin.org/',
+  },
+  {
+    id: 11,
+    name: 'Gari',
+    logo: gari,
+    link: 'https://gari.network/',
   },
 ];
 
