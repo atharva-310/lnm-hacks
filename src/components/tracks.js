@@ -4,6 +4,7 @@ import { data } from '../api/tracks';
 import { motion } from 'framer-motion';
 import defiTracks from '../assets/cur-sponsor-logo/defiTracks.png';
 import prize from '../assets/prizeImage.png';
+
 import {
   useBreakpointValue,
   Center,
@@ -58,7 +59,7 @@ const TracksPage = () => {
               >
                 <Box color="black" width="100%" mb="14px">
                   <Image
-                    src={defiTracks}
+                    src={item.src}
                     widht="100%"
                     objectFit="cover"
                     style={{

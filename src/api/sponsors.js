@@ -30,7 +30,7 @@ import LF from '../assets/logo-sponser/cf-logo-v-rgb.png';
 // community
 import three from '../assets/cur-sponsor-logo/three.png';
 import meso from '../assets/cur-sponsor-logo/meso.png';
-import aws from '../assets/cur-sponsor-logo/aws.png';
+import aws1 from '../assets/cur-sponsor-logo/aws1.png';
 import debug from '../assets/cur-sponsor-logo/debug.png';
 // import blueLearn from '../assets/cur-sponsor-logo/blueLearn.png';
 
@@ -187,7 +187,7 @@ export const community = [
   {
     id: 3,
     name: 'Aws',
-    logo: aws,
+    logo: aws1,
     link: 'https://aws.amazon.com/',
   },
   {

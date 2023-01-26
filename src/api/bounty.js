@@ -30,7 +30,7 @@ export const bounty = [
     name: 'Gari',
     logo: gari,
     link: 'https://gari.network/',
-    bounty: '$800',
+    bounty: '$500',
   },
 
   {
