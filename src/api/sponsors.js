@@ -129,7 +129,6 @@ export const gold = [
     logo: gari,
     link: 'https://gari.network/',
   },
-
 ];
 
 export const other = [
@@ -194,7 +193,7 @@ export const community = [
     id: 5,
     name: 'debug',
     logo: debug,
-    link: 'https://www.instagram.com/debugclub/?hl=en',
+    link: 'https://www.linkedin.com/company/awsjaipur/',
   },
   // {
   //   id: 4,

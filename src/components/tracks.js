@@ -38,7 +38,7 @@ const TracksPage = () => {
   });
   return (
     <>
-      <H1Gradient content={'Bounties'} mb="30px" />
+      <H1Gradient content={'Tracks & Bounties'} mb="30px" />
 
       <Center>
         <Flex

@@ -9,7 +9,6 @@ import web3 from '../assets/tracks/web3.png';
 import web23 from '../assets/tracks/web23.png';
 import women from '../assets/tracks/women.png';
 
-
 export const data = [
   {
     id: 1,
@@ -39,7 +38,7 @@ export const data = [
   {
     id: 7,
     Heading: 'NFTs',
-    text: 'create and develop innovative projects utilizing Non-Fungible Tokens (NFTs) technology and its real-world applications.',
+    text: 'Create and develop innovative projects utilizing Non-Fungible Tokens (NFTs) technology and its real-world applications.',
     src: nft,
   },
   {
