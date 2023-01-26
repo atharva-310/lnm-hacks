@@ -194,7 +194,7 @@ const TracksPage = () => {
           return (
             <motion.a
               key={index}
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 0.8 }}
               whileTap={{ scale: 0.9 }}
               href={item.link}
               target="_blank"
