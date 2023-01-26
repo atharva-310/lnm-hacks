@@ -20,6 +20,7 @@ import Register from './components/Register';
 import Sponsor from './components/Sponsor';
 import Faq from './components/Faq';
 import Venue from './components/venue';
+import Tracks from './components/tracks';
 
 function App() {
   const body = useRef(null);
@@ -85,6 +86,7 @@ function App() {
                 <AboutUs />
                 <ScrollerBanner />
                 <Register />
+                <Tracks />
                 <Sponsor />
                 <Faq />
                 <Venue />

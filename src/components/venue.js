@@ -4,7 +4,6 @@ import {
   useBreakpointValue,
   Center,
   Box,
-  HStack,
   Image,
   Heading,
   VStack,
