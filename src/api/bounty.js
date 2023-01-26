@@ -6,9 +6,10 @@ import poly from '../assets/cur-sponsor-logo/Polygon_Logo-Colored@2x.png';
 import deep from '../assets/cur-sponsor-logo/deepVerse.jpg';
 import spheron from '../assets/cur-sponsor-logo/spheron.jpg';
 import tezo from '../assets/cur-sponsor-logo/tezo.png';
-import gari from '../assets/cur-sponsor-logo/gari.svg';
+import gari from '../assets/cur-sponsor-logo/gari.png';
 import openInn from '../assets/cur-sponsor-logo/openIno.png';
 import xdc from '../assets/cur-sponsor-logo/xdc.png';
+
 export const bounty = [
   {
     id: 1,
