@@ -38,6 +38,7 @@ import { AiFillHeart } from 'react-icons/ai';
 const navItems = [
   { name: 'Home', id: '#home' },
   { name: 'About', id: '#about' },
+  { name: 'Schedule', id: '#schedule' },
   { name: 'Tracks & Bounties', id: '#tracks' },
   { name: 'Sponsors', id: '#sponsor' },
   { name: 'FAQs', id: '#faq' },
@@ -45,6 +46,7 @@ const navItems = [
 ];
 export const Navbar = () => {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
+  const toogleNav = useBreakpointValue({ base: false, md: true, lg: true });
   const [isDark, setColor] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
@@ -88,9 +90,8 @@ export const Navbar = () => {
                 Cafephile
               </Text> */}
             </HStack>
-
             <Spacer />
-            {isDesktop ? (
+            {/* {isDesktop ? (
               <Flex justify="flex-end" flex="1">
                 <ButtonGroup variant="link" spacing="8" marginEnd="20px">
                   {navItems.map((item, index) => (
@@ -126,89 +127,76 @@ export const Navbar = () => {
                   >
                     Register
                   </Button>
-                  {/* <Button
-                    bg="black"
-                    color="white"
-                    size="lg"
-                    _hover={{ transform: 'scale(1.1)' }}
-                    as="a"
-                    href="mailto:sponsors@lnmhacks.xyz"
-                  >
-                    Sponsor Us
-                  </Button> */}
+                  
                 </HStack>
               </Flex>
-            ) : (
-              <>
-                <IconButton
-                  variant="solid"
-                  bg="black"
-                  color="white"
-                  icon={<FiMenu fontSize="2rem" />}
-                  aria-label="Open Menu"
-                  ref={btnRef}
-                  onClick={onOpen}
-                />
-                <Drawer
-                  isOpen={isOpen}
-                  placement="right"
-                  onClose={onClose}
-                  finalFocusRef={btnRef}
-                >
-                  <DrawerOverlay />
-                  <DrawerContent bg="black">
-                    <DrawerCloseButton mt="13px" color="black" bg="white" />
-                    <DrawerHeader>
-                      <Image
-                        src={logo}
-                        height="2.5rem"
-                        filter={'invert(100%)'}
-                      />
-                    </DrawerHeader>
+            ) : ( */}
+            <>
+              <IconButton
+                variant="solid"
+                bg="black"
+                color="white"
+                icon={<FiMenu fontSize="2rem" />}
+                aria-label="Open Menu"
+                ref={btnRef}
+                onClick={onOpen}
+              />
+              <Drawer
+                isOpen={isOpen}
+                placement="right"
+                onClose={onClose}
+                finalFocusRef={btnRef}
+              >
+                <DrawerOverlay />
+                <DrawerContent bg="black">
+                  <DrawerCloseButton mt="13px" color="black" bg="white" />
+                  <DrawerHeader>
+                    <Image src={logo} height="2.5rem" filter={'invert(100%)'} />
+                  </DrawerHeader>
 
-                    <DrawerBody>
-                      <VStack width={'100%'} alignItems={'flex-start'}>
-                        {navItems.map((item, index) => (
-                          // <Box key={index}>
-                          <>
-                            <Button
-                              width={'100%'}
-                              color={'white'}
-                              bg="black"
-                              fontFamily="'Josefin Sans', sans-serif"
-                              key={item}
-                              fontSize="1.2rem"
-                              as="a"
-                              href={item.id}
-                              // onClick={onClose}
-                            >
-                              {item.name}
-                            </Button>
-                            <Divider />
-                          </>
+                  <DrawerBody>
+                    <VStack width={'100%'} alignItems={'flex-start'}>
+                      {navItems.map((item, index) => (
+                        // <Box key={index}>
+                        <>
+                          <Button
+                            width={'100%'}
+                            color={'white'}
+                            bg="black"
+                            fontFamily="'Josefin Sans', sans-serif"
+                            key={item}
+                            fontSize="1.2rem"
+                            as="a"
+                            href={item.id}
+                            // onClick={onClose}
+                          >
+                            {item.name}
+                          </Button>
+                          <Divider />
+                        </>
 
-                          // </Box>
-                        ))}
-                      </VStack>
-                    </DrawerBody>
+                        // </Box>
+                      ))}
+                    </VStack>
+                  </DrawerBody>
 
-                    <DrawerFooter>
-                      <VStack
-                        width={'100%'}
-                        fontFamily="'Josefin Sans', sans-serif"
-                        fontSize="20px"
+                  <DrawerFooter>
+                    <VStack
+                      width={'100%'}
+                      fontFamily="'Josefin Sans', sans-serif"
+                      fontSize="20px"
+                    >
+                      <Button
+                        width="100%"
+                        rounded="lg"
+                        variant="solid"
+                        as="a"
+                        href="#register"
+                        // onClick={onClose}
                       >
-                        <Button
-                          width="100%"
-                          rounded="lg"
-                          variant="solid"
-                          as="a"
-                          href="#register"
-                          // onClick={onClose}
-                        >
-                          Register
-                        </Button>
-                        {/* <Button
+                        Register
+                      </Button>
+                      {/* <Button
                           width="100%"
                           rounded="lg"
                           variant="solid"
@@ -220,36 +208,36 @@ export const Navbar = () => {
                           Sponsor Us
                         </Button> */}
 
-                        <HStack
-                          justify="space-evenly"
-                          bg="white"
-                          height="50px"
-                          w="100%"
-                          p="10px"
-                          rounded="lg"
-                        >
-                          {socials.map((item, index) => {
-                            return (
-                              // <Box>
-                              <Center
-                                h="100%"
-                                w="100%"
-                                fontSize="4xl"
-                                key={index}
-                              >
-                                <Link href={item.link} target="_blank">
-                                  {item.logo}
-                                </Link>
-                              </Center>
-                              // </Box>
-                            );
-                          })}
-                        </HStack>
-                      </VStack>
-                    </DrawerFooter>
-                  </DrawerContent>
-                </Drawer>
-              </>
+                      <HStack
+                        justify="space-evenly"
+                        bg="white"
+                        height="50px"
+                        w="100%"
+                        p="10px"
+                        rounded="lg"
+                      >
+                        {socials.map((item, index) => {
+                          return (
+                            // <Box>
+                            <Center
+                              h="100%"
+                              w="100%"
+                              fontSize="4xl"
+                              key={index}
+                            >
+                              <Link href={item.link} target="_blank">
+                                {item.logo}
+                              </Link>
+                            </Center>
+                            // </Box>
+                          );
+                        })}
+                      </HStack>
+                    </VStack>
+                  </DrawerFooter>
+                </DrawerContent>
+              </Drawer>
+            </>
             )}
           </HStack>
         </Center>

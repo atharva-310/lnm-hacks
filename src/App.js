@@ -21,6 +21,7 @@ import Sponsor from './components/Sponsor';
 import Faq from './components/Faq';
 import Venue from './components/venue';
 import Tracks from './components/tracks';
+import Schedule from './components/schedule/Schedule';
 
 function App() {
   const body = useRef(null);
@@ -85,11 +86,14 @@ function App() {
                 <Home />
                 <AboutUs />
                 <ScrollerBanner />
-                <Register />
+
+                <Schedule />
                 <Tracks />
+                <Register />
                 <Sponsor />
                 <Faq />
                 <Venue />
+
                 <Divider />
                 <Footer />
               </>
