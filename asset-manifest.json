@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d8819f84.css",
-    "main.js": "/static/js/main.e95e1bc3.js",
+    "main.js": "/static/js/main.4fa89fbe.js",
     "static/media/trikon.png": "/static/media/trikon.13df900c1d505716d7b9.png",
     "static/media/hero-new.png": "/static/media/hero-new.59842279ccf78289ead8.png",
     "static/media/hero-new-mob.png": "/static/media/hero-new-mob.636b31493fa5be7e5e60.png",
@@ -27,7 +27,6 @@
     "static/media/payment.png": "/static/media/payment.357dda370084a46f7378.png",
     "static/media/spheron.jpg": "/static/media/spheron.0fb0ac1a5b36449fc6fe.jpg",
     "static/media/cake.png": "/static/media/cake.dc92ee7009096a444b45.png",
-    "static/media/aws1.png": "/static/media/aws1.040b71b882832d9a4788.png",
     "static/media/camp.png": "/static/media/camp.85e61593184f0682efd7.png",
     "static/media/deepVerse.jpg": "/static/media/deepVerse.6b1a220d1d9c666663ec.jpg",
     "static/media/jetbrains.png": "/static/media/jetbrains.2b56c87ce12f3813c38c.png",
@@ -36,6 +35,7 @@
     "static/media/Solana-Colored.png": "/static/media/Solana-Colored.ced114bf5db913f2f1de.png",
     "static/media/web23.png": "/static/media/web23.32f7459861d8faffdf1e.png",
     "static/media/web3.png": "/static/media/web3.c94a826eb30b329550f3.png",
+    "static/media/aws1.png": "/static/media/aws1.779397544e0d871d0150.png",
     "static/media/Replit-light-background.png": "/static/media/Replit-light-background.7dfcd85e073f18b57609.png",
     "static/media/unilend.svg": "/static/media/unilend.139f6191a11482833fd88730284a4d7e.svg",
     "static/media/huddle01-logo-blue.svg": "/static/media/huddle01-logo-blue.23285db5581147289f184837a987c9db.svg",
@@ -45,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.d8819f84.css",
-    "static/js/main.e95e1bc3.js"
+    "static/js/main.4fa89fbe.js"
   ]
 }
