@@ -6,8 +6,8 @@ import poly from '../assets/cur-sponsor-logo/Polygon_Logo-Colored@2x.png';
 import deep from '../assets/cur-sponsor-logo/deepVerse.jpg';
 import spheron from '../assets/cur-sponsor-logo/spheron.jpg';
 import tezo from '../assets/cur-sponsor-logo/tezo.png';
-import gari from '../assets/cur-sponsor-logo/gari.jpg';
-import openInn from '../assets/cur-sponsor-logo/openIno.png'
+import gari from '../assets/cur-sponsor-logo/gari.svg';
+import openInn from '../assets/cur-sponsor-logo/openIno.png';
 import xdc from '../assets/cur-sponsor-logo/xdc.png';
 export const bounty = [
   {
@@ -31,7 +31,7 @@ export const bounty = [
     link: 'https://gari.network/',
     bounty: '$800',
   },
-  
+
   {
     id: 4,
     name: 'Tezos',
@@ -86,9 +86,7 @@ export const bounty = [
     id: 11,
     name: 'Replit',
     logo: sola,
-    link:  'https://replit.com/',
+    link: 'https://replit.com/',
     bounty: '$50',
   },
-
-
 ];
