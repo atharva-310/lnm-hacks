@@ -2,7 +2,8 @@ import React from 'react';
 import MakePage from './Basic/MakePage';
 import { data } from '../api/tracks';
 import { motion } from 'framer-motion';
-
+import defiTracks from '../assets/cur-sponsor-logo/defiTracks.png';
+import prize from '../assets/prizeImage.png'
 import {
   useBreakpointValue,
   Center,
@@ -32,7 +33,7 @@ const TracksPage = () => {
   return (
     <>
       <H1Gradient content={'Bounties'} mb="30px" />
-      {/* 
+      
       <Center>
         <Flex
           flexDir={isTablet ? 'column' : 'row'}
@@ -43,17 +44,23 @@ const TracksPage = () => {
             return (
               <VStack
                 m={'10px'}
-                padding="30px"
+                padding="20px"
                 bgColor="white"
                 rounded="20px"
                 width="300px"
                 key={item.id}
               >
+                <Box  color='black' 
+                width='100%'
+
+                >
+                   <Image src={defiTracks} />
+                </Box>
                 <Heading
                   as={'h2'}
                   fontFamily=" 'Inter', sans-seri"
                   fontWeight="700"
-                  fontSize="4xl"
+                  fontSize="3xl"
                   color="black"
                   width="100%"
                 >
@@ -61,7 +68,7 @@ const TracksPage = () => {
                 </Heading>
                 <Text
                   fontFamily=" 'Inter', sans-seri"
-                  fontSize="20px"
+                  fontSize='sm'
                   fontWeight="500"
                   color="black"
                 >
@@ -71,7 +78,7 @@ const TracksPage = () => {
             );
           })}
         </Flex>
-      </Center> */}
+      </Center>
 
       {/* Bounties */}
       <Flex flexDir="row" flexWrap="wrap" justifyContent={'space-evenly'}>
