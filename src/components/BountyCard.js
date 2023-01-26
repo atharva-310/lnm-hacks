@@ -10,7 +10,7 @@ export function BountyCard(props) {
       justifyContent="space-evenly"
     >
       <Image
-        maxW="100%"
+        maxW="80%"
         height="80px"
         src={props.data.logo}
         size="contain"

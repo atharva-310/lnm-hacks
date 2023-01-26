@@ -42,11 +42,11 @@ const TracksPage = () => {
           {data.map(item => {
             return (
               <VStack
-                m={'20px'}
+                m={'10px'}
                 padding="30px"
                 bgColor="white"
                 rounded="20px"
-                width="400px"
+                width="300px"
                 // minW={isTablet ? '40vw' : '340px'}
                 // minH={isTablet ? '80vh' : '510px'}
                 key={item.id}
@@ -55,7 +55,7 @@ const TracksPage = () => {
                   justifyContent="space-between"
                   width="100%"
                   alignItems="center"
-                  mb="30px"
+                  mb="20px"
                 >
                   <Image
                     width="60px"
@@ -69,7 +69,7 @@ const TracksPage = () => {
                     boxShadow="0px 5px 3px #7B7A72"
                     textAlign="center"
                     bgColor="black"
-                    width="100px"
+                    width="70px"
                     height="40px"
                     borderRadius="50px"
                   ></Box>
@@ -77,7 +77,7 @@ const TracksPage = () => {
 
                 <Heading
                   as={'h2'}
-                  mt="30px"
+                  // mt="30px"
                   fontFamily=" 'Inter', sans-seri"
                   fontWeight="700"
                   fontSize="4xl"
@@ -94,7 +94,7 @@ const TracksPage = () => {
                 >
                   {item.text}
                 </Text>
-                <Flex
+                {/* <Flex
                   width="100%"
                   marginTop={isTablet ? '40' : '40'}
                   direction="column"
@@ -181,7 +181,7 @@ const TracksPage = () => {
                   >
                     More Info
                   </Button>
-                </Flex>
+                </Flex> */}
               </VStack>
             );
           })}
