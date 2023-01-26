@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d8819f84.css",
-    "main.js": "/static/js/main.b2e50753.js",
+    "main.js": "/static/js/main.e95e1bc3.js",
     "static/media/trikon.png": "/static/media/trikon.13df900c1d505716d7b9.png",
     "static/media/hero-new.png": "/static/media/hero-new.59842279ccf78289ead8.png",
     "static/media/hero-new-mob.png": "/static/media/hero-new-mob.636b31493fa5be7e5e60.png",
@@ -11,20 +11,31 @@
     "static/media/venue1.jpg": "/static/media/venue1.0310bae1ebf4bdfa18d8.jpg",
     "static/media/saturn.png": "/static/media/saturn.26cd920d856d8aa37597.png",
     "static/media/openIno.png": "/static/media/openIno.a95d32a2e76d236a0a93.png",
+    "static/media/women.png": "/static/media/women.f5666029070d09f1187d.png",
     "static/media/du.png": "/static/media/du.d0a7402b41a023d5baf8.png",
     "static/media/git.png": "/static/media/git.b5de6db994b1a24f17cd.png",
     "static/media/wolf.png": "/static/media/wolf.5381867fc7081a38b505.png",
     "static/media/debug.png": "/static/media/debug.cdf735a0264c15613bca.png",
+    "static/media/daos.png": "/static/media/daos.538aa5e1a812f94a1e34.png",
     "static/media/know.png": "/static/media/know.6cf70f09f017512005ea.png",
+    "static/media/open.png": "/static/media/open.b421eff5fff69be8199c.png",
+    "static/media/game.png": "/static/media/game.a2cb0779b5ab6759ad60.png",
+    "static/media/defi.png": "/static/media/defi.ff0f437e914a1e062128.png",
+    "static/media/defiTracks.png": "/static/media/defiTracks.ff0f437e914a1e062128.png",
     "static/media/stick.png": "/static/media/stick.019e46ecccbf1fcf8a02.png",
+    "static/media/nft.png": "/static/media/nft.1334cca07de0b75a9aa0.png",
+    "static/media/payment.png": "/static/media/payment.357dda370084a46f7378.png",
     "static/media/spheron.jpg": "/static/media/spheron.0fb0ac1a5b36449fc6fe.jpg",
     "static/media/cake.png": "/static/media/cake.dc92ee7009096a444b45.png",
+    "static/media/aws1.png": "/static/media/aws1.040b71b882832d9a4788.png",
     "static/media/camp.png": "/static/media/camp.85e61593184f0682efd7.png",
     "static/media/deepVerse.jpg": "/static/media/deepVerse.6b1a220d1d9c666663ec.jpg",
     "static/media/jetbrains.png": "/static/media/jetbrains.2b56c87ce12f3813c38c.png",
     "static/media/echo.png": "/static/media/echo.b466dfa2b1beacefed80.png",
     "static/media/cb.png": "/static/media/cb.f042883520ac0fdff275.png",
     "static/media/Solana-Colored.png": "/static/media/Solana-Colored.ced114bf5db913f2f1de.png",
+    "static/media/web23.png": "/static/media/web23.32f7459861d8faffdf1e.png",
+    "static/media/web3.png": "/static/media/web3.c94a826eb30b329550f3.png",
     "static/media/Replit-light-background.png": "/static/media/Replit-light-background.7dfcd85e073f18b57609.png",
     "static/media/unilend.svg": "/static/media/unilend.139f6191a11482833fd88730284a4d7e.svg",
     "static/media/huddle01-logo-blue.svg": "/static/media/huddle01-logo-blue.23285db5581147289f184837a987c9db.svg",
@@ -34,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.d8819f84.css",
-    "static/js/main.b2e50753.js"
+    "static/js/main.e95e1bc3.js"
   ]
 }
