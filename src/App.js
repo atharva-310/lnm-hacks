@@ -25,7 +25,7 @@ import Tracks from './components/tracks';
 function App() {
   const body = useRef(null);
 
-  const [isLoading, setLoading] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
   // useCursor(body);
 

@@ -53,8 +53,8 @@ export default function Community() {
             >
               <Box
                 my="10px"
-                mx="3px"
-                width={isMobPlatinum ? '40vw' : '200px'}
+                mx={isMobPlatinum ? '3px' : '20px'}
+                width={isMobPlatinum ? '40vw' : '250px'}
                 height={isMobPlatinum ? '100px' : '130px'}
                 bg="white"
                 rounded="xl"
@@ -64,7 +64,7 @@ export default function Community() {
             </motion.a>
           );
         })}
-        <motion.a
+        {/* <motion.a
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           target="_blank"
@@ -78,7 +78,6 @@ export default function Community() {
             bg="white"
             rounded="xl"
           >
-            {/* <SponserCard data={item} /> */}
             <Center
               height="100%"
               p="10px"
@@ -90,7 +89,7 @@ export default function Community() {
               </Heading>
             </Center>
           </Box>
-        </motion.a>
+        </motion.a> */}
       </Flex>
     </>
   );

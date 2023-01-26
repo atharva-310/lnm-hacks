@@ -55,7 +55,7 @@ export default function Platinum() {
                 mx="3px"
                 width={isMobPlatinum ? '80vw' : '290px'}
                 // maxW="300px"
-                height={isMobPlatinum ? '120px' : '180px'}
+                height={isMobPlatinum ? '120px' : '200px'}
                 bg="white"
                 rounded="xl"
               >

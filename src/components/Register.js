@@ -23,13 +23,16 @@ function RegisterPage() {
       px="20px"
       color="white"
     >
-      <Heading as={'h2'} fontSize="lg">
+      <Heading as={'h2'} fontSize="lg" mb="0" pb="0">
         LNMHacks 5.0 | LNMIIT Jaipur
+      </Heading>
+      <Heading as={'h2'} fontSize="lg" mt="0" fontStyle="italic">
+        27 - 29 January
       </Heading>
       <Heading
         as={'h1'}
-        fontSize="4xl"
-        mt="15px"
+        fontSize={['3xl', '3xl', '4xl']}
+        mt="10px"
         // textTransform="uppercase"
         // color="black"
         textAlign="center"
@@ -37,6 +40,7 @@ function RegisterPage() {
       >
         Unite In The League of Geeks, Join The Confederation of Hackers
       </Heading>
+
       <Box mt="40px">
         <div
           className="apply-button"

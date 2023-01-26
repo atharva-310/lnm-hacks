@@ -1,22 +1,35 @@
 // platinum
 import dev from '../assets/cur-sponsor-logo/Devfolio_Logo-Colored@2x.png';
 import huddle from '../assets/cur-sponsor-logo/huddle01-logo-blue.svg';
-import poly from '../assets/cur-sponsor-logo/Polygon_Logo-Colored@2x.png';
+
 import sat from '../assets/cur-sponsor-logo/saturn.png';
+import deep from '../assets/cur-sponsor-logo/deepVerse.jpg';
+
 // gold
 import file from '../assets/cur-sponsor-logo/filecoin.png';
+import poly from '../assets/cur-sponsor-logo/Polygon_Logo-Colored@2x.png';
 import rep from '../assets/cur-sponsor-logo/Replit-light-background.png';
 import sola from '../assets/cur-sponsor-logo/Solana-Colored.png';
-
+import spheron from '../assets/cur-sponsor-logo/spheron.jpg';
+import tezo from '../assets/cur-sponsor-logo/tezo.png';
+import unilend from '../assets/cur-sponsor-logo/unilend.svg';
+import zeeve from '../assets/cur-sponsor-logo/zeeve.svg';
+import trikon from '../assets/cur-sponsor-logo/trikon.png';
 // other
 import task from '../assets/cur-sponsor-logo/logo_taskade_black.png';
 import xyz from '../assets/cur-sponsor-logo/xyz-logo-color.png';
 import echo from '../assets/cur-sponsor-logo/echo.png';
 import interview from '../assets/cur-sponsor-logo/cake.png';
+import axure from '../assets/cur-sponsor-logo/axure.svg';
+import LF from '../assets/logo-sponser/cf-logo-v-rgb.png';
 
 // community
 import three from '../assets/cur-sponsor-logo/three.png';
 import meso from '../assets/cur-sponsor-logo/meso.png';
+import aws from '../assets/cur-sponsor-logo/aws.png';
+import debug from '../assets/cur-sponsor-logo/debug.png';
+// import blueLearn from '../assets/cur-sponsor-logo/blueLearn.png';
+
 export const platinum = [
   {
     id: 1,
@@ -30,17 +43,18 @@ export const platinum = [
     logo: dev,
     link: 'https://devfolio.co/',
   },
-  {
-    id: 3,
-    name: 'Polygon',
-    logo: poly,
-    link: 'https://polygon.technology/',
-  },
+
   {
     id: 4,
     name: 'Saturn',
     logo: sat,
     link: 'https://www.0xsaturn.com/',
+  },
+  {
+    id: 5,
+    name: 'DeepVerse ',
+    logo: deep,
+    link: 'https://mobile.twitter.com/daodeepverse',
   },
 ];
 
@@ -50,6 +64,12 @@ export const gold = [
     name: 'Filecoin',
     logo: file,
     link: 'https://filecoin.io/',
+  },
+  {
+    id: 9,
+    name: 'Polygon',
+    logo: poly,
+    link: 'https://polygon.technology/',
   },
   {
     id: 2,
@@ -62,6 +82,36 @@ export const gold = [
     name: 'Solana',
     logo: sola,
     link: 'https://solana.com/',
+  },
+  {
+    id: 4,
+    name: 'spheron',
+    logo: spheron,
+    link: 'https://spheron.network/',
+  },
+  {
+    id: 5,
+    name: 'Tezos',
+    logo: tezo,
+    link: 'https://tezos.com/',
+  },
+  {
+    id: 6,
+    name: 'unilend',
+    logo: unilend,
+    link: 'https://unilend.finance/',
+  },
+  // {
+  //   id: 7,
+  //   name: 'zeeve',
+  //   logo: zeeve,
+  //   link: 'https://www.zeeve.io/',
+  // },
+  {
+    id: 8,
+    name: 'trikon',
+    logo: trikon,
+    link: 'https://trikon.io/',
   },
 ];
 
@@ -90,6 +140,18 @@ export const other = [
     logo: interview,
     link: 'https://www.interviewcake.com/',
   },
+  {
+    id: 5,
+    name: 'Axure',
+    logo: axure,
+    link: 'https://www.axure.com/',
+  },
+  {
+    id: 6,
+    name: 'Cloudflare',
+    logo: LF,
+    link: 'https://www.cloudflare.com/en-gb/',
+  },
 ];
 
 export const community = [
@@ -105,4 +167,22 @@ export const community = [
     logo: meso,
     link: 'https://www.mesohacks.co/',
   },
+  {
+    id: 3,
+    name: 'Aws',
+    logo: aws,
+    link: 'https://aws.amazon.com/',
+  },
+  {
+    id: 5,
+    name: 'debug',
+    logo: debug,
+    link: 'https://www.instagram.com/debugclub/?hl=en',
+  },
+  // {
+  //   id: 4,
+  //   name: 'blue Learn',
+  //   logo: blueLearn,
+  //   link: 'https://www.bluelearn.in/',
+  // },
 ];

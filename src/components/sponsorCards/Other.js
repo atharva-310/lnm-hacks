@@ -53,8 +53,8 @@ export default function Other() {
             >
               <Box
                 my="10px"
-                mx="3px"
-                width={isMobPlatinum ? '40vw' : '200px'}
+                mx={isMobPlatinum ? '3px' : '20px'}
+                width={isMobPlatinum ? '40vw' : '250px'}
                 height={isMobPlatinum ? '100px' : '130px'}
                 bg="white"
                 rounded="xl"
