@@ -194,7 +194,7 @@ export const Navbar = () => {
                         href="#register"
                         // onClick={onClose}
                       >
-                        Register
+                        Projects
                       </Button>
                       {/* <Button
                           width="100%"
