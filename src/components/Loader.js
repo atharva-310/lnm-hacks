@@ -1,8 +1,9 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import logoW from '../assets/logo-white-dates.png';
 import { Box, Heading, Image } from '@chakra-ui/react';
+import logoW from '../assets/logo-white-dates.png';
 
+// Loader using the GSAP library
 export default function Loader() {
   const [right, setRight] = useState();
   const bar = useRef();
@@ -64,7 +65,6 @@ export default function Loader() {
           y: 0,
         }
       );
-
       // tLine.fromTo(
       //   '#dates',
       //   {

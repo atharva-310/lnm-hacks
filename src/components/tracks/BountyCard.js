@@ -1,6 +1,6 @@
 import { Center, Heading, Image } from '@chakra-ui/react';
 
-export function BountyCard(props) {
+export default function BountyCard(props) {
   return (
     <Center
       width="100%"

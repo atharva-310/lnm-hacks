@@ -11,6 +11,7 @@ import {
 import { wrap } from '@motionone/utils';
 import { Box } from '@chakra-ui/react';
 
+// Horizontal infinite scrolling banner
 function ParallaxText({ children, baseVelocity = 100 }) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
@@ -40,19 +41,9 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   return (
     <div className="parallax">
       <motion.div className="scroller" style={{ x }}>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
+        {[...Array(13)].map((i, index) => (
+          <span key={index}>{children} </span>
+        ))}
       </motion.div>
     </div>
   );
@@ -71,7 +62,6 @@ export default function ScrollerBanner() {
         Hackathon blockchain Defi DAO nft gaming innovation community
         development coding design
       </ParallaxText> */}
-      {/* <ParallaxText baseVelocity={5}>React.js</ParallaxText> */}
     </Box>
   );
 }

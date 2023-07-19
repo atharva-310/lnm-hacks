@@ -1,29 +1,24 @@
-import React from 'react';
-import MakePage from './Basic/MakePage';
-import { data } from '../api/tracks';
-import { motion } from 'framer-motion';
-import defiTracks from '../assets/cur-sponsor-logo/defiTracks.png';
-import prize from '../assets/prizeImage.png';
-
 import {
   useBreakpointValue,
-  Center,
   Box,
   Image,
   Heading,
   Flex,
   Text,
-  Divider,
   VStack,
-  Button,
-  HStack,
+  Center,
 } from '@chakra-ui/react';
-import H1Gradient from './Basic/H1Gradient';
-import { SponserCard } from './SponsorCard';
-import { gold } from '../api/sponsors';
-import { BountyCard } from './BountyCard';
-import { bounty } from '../api/bounty';
-const TracksPage = () => {
+import { motion } from 'framer-motion';
+
+import MakePage from '../Basic/MakePage';
+import H1Gradient from '../Basic/H1Gradient';
+import BountyCard from './BountyCard';
+
+import { bounty } from '../../api/bounty';
+import { data } from '../../api/tracks';
+
+// Display all tracks and bounties
+const TracksBountyPage = () => {
   const isTablet = useBreakpointValue({
     base: true,
     sm: true,
@@ -39,7 +34,6 @@ const TracksPage = () => {
   return (
     <>
       <H1Gradient content={'Tracks & Bounties'} mb="30px" />
-
       <Center>
         <Flex
           flexDir={isTablet ? 'column' : 'row'}
@@ -109,7 +103,6 @@ const TracksPage = () => {
               <Box
                 my="10px"
                 mx="3px"
-                // width={isTablet ? '20vw' : '200px'}
                 width={['40vw', '40vw', '20vw', '20vw', '200px']}
                 height={isTablet ? '130px' : '130px'}
                 bg="white"
@@ -125,6 +118,6 @@ const TracksPage = () => {
   );
 };
 
-export default function Tracks() {
-  return <MakePage id="tracks" children={<TracksPage />} />;
+export default function TracksBounty() {
+  return <MakePage id="tracks" children={<TracksBountyPage />} />;
 }

@@ -1,31 +1,21 @@
-import {
-  Box,
-  Center,
-  HStack,
-  VStack,
-  Divider,
-  Text,
-  Heading,
-  useBreakpointValue,
-} from '@chakra-ui/react';
+import { Box, Center, HStack, VStack, Heading } from '@chakra-ui/react';
+
 import { useState } from 'react';
-import { jan27 } from '../../api/schedule';
+
+// Custom wrapper components
 import H1Gradient from '../Basic/H1Gradient';
 import MakePage from '../Basic/MakePage';
-import Jan27 from './Jan27';
-import Jan28 from './Jan28';
-import Jan29 from './Jan29';
 
+// Data for each day's schedule
+import { jan27 } from '../../api/schedule';
+import { jan28 } from '../../api/schedule';
+import { jan29 } from '../../api/schedule';
+
+import DayPage from './DayPage';
+
+// Calendar like component display schedule for each day
 const SchedulePage = () => {
   const [curId, setId] = useState(27);
-  const isMobPlatinum = useBreakpointValue({
-    base: true,
-    sm: true,
-    md: true,
-    lg: false,
-  });
-  console.log(isMobPlatinum);
-
   return (
     <>
       <H1Gradient content={'Schedule'} mb="80px" />
@@ -47,47 +37,21 @@ const SchedulePage = () => {
             position="relative"
             top="-30px"
           >
-            <HStack width="50%" justifyContent="center">
-              <Box
-                height="60px"
-                width="20px"
-                borderRadius="20px"
-                bg="#E61B1B"
-              ></Box>
-              <Box
-                height="60px"
-                width="20px"
-                borderRadius="20px"
-                bg="#E61B1B"
-              ></Box>
-              <Box
-                height="60px"
-                width="20px"
-                borderRadius="20px"
-                bg="#E61B1B"
-              ></Box>
-            </HStack>
-            <HStack width="50%" justifyContent="center">
-              <Box
-                height="60px"
-                width="20px"
-                borderRadius="20px"
-                bg="#E61B1B"
-              ></Box>
-              <Box
-                height="60px"
-                width="20px"
-                borderRadius="20px"
-                bg="#E61B1B"
-              ></Box>
-              <Box
-                height="60px"
-                width="20px"
-                borderRadius="20px"
-                bg="#E61B1B"
-              ></Box>
-            </HStack>
+            {[...Array(2)].map(i => (
+              <HStack width="50%" justifyContent="center" key={i}>
+                {[...Array(3)].map((i, index) => (
+                  <Box
+                    key={index}
+                    height="60px"
+                    width="20px"
+                    borderRadius="20px"
+                    bg="#E61B1B"
+                  ></Box>
+                ))}
+              </HStack>
+            ))}
           </HStack>
+
           <Box width="95%" minH="350px" border="2px solid #000000" rounded="xl">
             <HStack
               width="100%"
@@ -96,48 +60,35 @@ const SchedulePage = () => {
               justifyContent="space-evenly"
               cursor="pointer"
             >
-              <Heading
-                textAlign="center"
-                color={curId === 27 ? 'black' : 'gray'}
-                _hover={{ transform: 'scale(1.1)' }}
-                onClick={() => {
-                  setId(27);
-                }}
-              >
-                {' '}
-                27 Jan
-              </Heading>
-              <Box bg="black" height="100%" width="2px"></Box>
+              {['27 Jan', '28 Jan', '29Jan'].map((item, index) => {
+                const id = index + 27;
+                return (
+                  <>
+                    <Heading
+                      key={index}
+                      textAlign="center"
+                      color={curId === id ? 'black' : 'gray'}
+                      _hover={{ transform: 'scale(1.1)' }}
+                      onClick={() => {
+                        setId(id);
+                      }}
+                    >
+                      {item}
+                    </Heading>
 
-              <Heading
-                textAlign="center"
-                color={curId === 28 ? 'black' : 'gray'}
-                _hover={{ transform: 'scale(1.1)' }}
-                onClick={() => {
-                  setId(28);
-                }}
-              >
-                {' '}
-                28 Jan
-              </Heading>
-              <Box bg="black" height="100%" width="2px"></Box>
-              <Heading
-                textAlign="center"
-                color={curId === 29 ? 'black' : 'gray'}
-                _hover={{ transform: 'scale(1.1)' }}
-                onClick={() => {
-                  setId(29);
-                }}
-              >
-                {' '}
-                29 Jan
-              </Heading>
+                    {index !== 2 && (
+                      <Box bg="black" height="100%" width="2px"></Box>
+                    )}
+                  </>
+                );
+              })}
             </HStack>
             <Box width="100%" bg="black" height="2px"></Box>
 
-            {curId === 27 && <Jan27 />}
-            {curId === 28 && <Jan28 />}
-            {curId === 29 && <Jan29 />}
+            {/* Based on the state of dynamically set the current page of the calendar */}
+            {curId === 27 && <DayPage data={jan27} numberOfItems={4} />}
+            {curId === 28 && <DayPage data={jan28} numberOfItems={5} />}
+            {curId === 29 && <DayPage data={jan29} numberOfItems={3} />}
           </Box>
         </VStack>
       </Center>

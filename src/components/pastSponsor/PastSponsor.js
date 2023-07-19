@@ -8,12 +8,12 @@ import {
 
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
 
-import sponsorData from '../api/pastSponsor';
-import H1Gradient from './Basic/H1Gradient';
-import MakePage from './Basic/MakePage';
+import sponsorData from '../../api/pastSponsor';
+import H1Gradient from '../Basic/H1Gradient';
+import MakePage from '../Basic/MakePage';
 import { PastSponserCard, PastSponserUsCard } from './PastSponserCard';
 
-import '../styles/main.css';
+import '../../styles/main.css';
 const SponsorPage = () => {
   const isDesktop = useBreakpointValue({
     base: false,
@@ -64,11 +64,9 @@ const SponsorPage = () => {
           href={'mailto:sponsors@lnmhacks.xyz'}
         >
           <Box
-            // key={index}
             my="10px"
             mx="3px"
             width={isDesktop ? '180px' : '40vw'}
-            // maxW="300px"
             height="90px"
             bg="white"
             rounded="xl"
@@ -100,7 +98,6 @@ const SponsorPage = () => {
   );
 };
 
-const PastSponsor = () => {
+export default function PastSponsor() {
   return <MakePage children={<SponsorPage />} id="sponsor" />;
-};
-export default PastSponsor;
+}

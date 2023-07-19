@@ -1,17 +1,15 @@
 import {
   Box,
-  Center,
   HStack,
   VStack,
   Divider,
-  Text,
   Heading,
   useBreakpointValue,
 } from '@chakra-ui/react';
-import { jan28 } from '../../api/schedule';
 
-export default function Jan28() {
-  const isMobPlatinum = useBreakpointValue({
+// Will display the schedule of each day in form of table
+export default function DayPage({ data, numberOfItems }) {
+  const isMob = useBreakpointValue({
     base: true,
     sm: true,
     md: true,
@@ -19,21 +17,16 @@ export default function Jan28() {
   });
   return (
     <>
-      {isMobPlatinum ? (
+      {isMob ? (
         <VStack width="100%" mt="20px" mx="20px">
-          {jan28.map((item, index) => {
+          {data.map((item, index) => {
             return (
               <>
-                <Box width="100%">
-                  <Heading
-                    fontSize="2xl"
-                    display="inline"
-                    color="gray"
-                    me="20px"
-                  >
+                <Box key={index} width="100%" fontSize="2xl">
+                  <Heading display="inline" color="gray" me="20px">
                     {item.time}
                   </Heading>
-                  <Heading fontSize="2xl" display="inline" color="black">
+                  <Heading display="inline" color="black">
                     {item.event}
                   </Heading>
                   <Divider width="90%" my="10px" />
@@ -45,13 +38,13 @@ export default function Jan28() {
       ) : (
         <HStack width="100%">
           <VStack width="50%" mt="20px" mx="20px">
-            {jan28.map((item, index) => {
-              if (index >= 5) {
+            {data.map((item, index) => {
+              if (index >= numberOfItems) {
                 return null;
               }
               return (
                 <>
-                  <Box width="100%">
+                  <Box width="100%" key={index}>
                     <Heading
                       fontSize="2xl"
                       display="inline"
@@ -70,13 +63,13 @@ export default function Jan28() {
             })}
           </VStack>
           <VStack width="50%" mt="20px" mx="20px">
-            {jan28.map((item, index) => {
-              if (index < 5) {
+            {data.map((item, index) => {
+              if (index < numberOfItems) {
                 return null;
               }
               return (
                 <>
-                  <Box width="100%">
+                  <Box width="100%" key={index}>
                     <Heading
                       fontSize="2xl"
                       display="inline"

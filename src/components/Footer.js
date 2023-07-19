@@ -8,10 +8,10 @@ import {
   Image,
   useColorModeValue,
   VisuallyHidden,
+  Center,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
-import socials from '../api/socials';
 
+import socials from '../api/socials';
 import logo from '../assets/logo-white-dates.png';
 
 const SocialButton = ({ children, label, href }) => {
@@ -46,8 +46,8 @@ export default function Footer() {
       <Container
         as={Stack}
         maxW={'6xl'}
-        py="40px"
-        pb="40px"
+        pb="20px"
+        pt="40px"
         direction={{ base: 'column', md: 'column', lg: 'row' }}
         spacing={4}
         justify={{ base: 'center', md: 'center', md: 'space-between' }}
@@ -69,13 +69,33 @@ export default function Footer() {
         <Stack direction={'row'} spacing={6}>
           {socials.map((item, index) => {
             return (
-              <SocialButton label={item.name} href={item.link}>
+              <SocialButton key={index} label={item.name} href={item.link}>
                 {item.logo}
               </SocialButton>
             );
           })}
         </Stack>
       </Container>
+      <Center my="10px">
+        <Text color="whiteAlpha.500">
+          Designed & Developed by{' '}
+          <Link
+            textDecoration="underline"
+            target="_blank"
+            href="https://atharva-310.github.io/portfolio/"
+          >
+            Atharva Pakade
+          </Link>{' '}
+          {', '}
+          <Link
+            target="_blank"
+            href="https://github.com/Ramsha42001"
+            textDecoration="underline"
+          >
+            Ramsha Iqbal
+          </Link>{' '}
+        </Text>
+      </Center>
     </Box>
   );
 }

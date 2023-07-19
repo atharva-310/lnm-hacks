@@ -15,7 +15,6 @@ export const bounty = [
     id: 1,
     name: 'Open Innovation',
     logo: openInn,
-    //link: 'https://solana.com/',
     bounty: '$1500',
   },
   {

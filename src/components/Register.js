@@ -1,18 +1,25 @@
 import { Box, Heading, Center, useBreakpointValue } from '@chakra-ui/react';
-import React from 'react';
+import { useEffect } from 'react';
+
 import MakePage from './Basic/MakePage';
+
+// Register section will redirect the user to devfolio
 function RegisterPage() {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
-  React.useEffect(() => {
+
+  useEffect(() => {
+    // devfolio script addition
     const script = document.createElement('script');
     script.src = 'https://apply.devfolio.co/v2/sdk.js';
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
     return () => {
+      // devfolio script removal (cleanup)
       document.body.removeChild(script);
     };
   }, []);
+
   return (
     <Center
       className="changingGradient"
@@ -33,8 +40,6 @@ function RegisterPage() {
         as={'h1'}
         fontSize={['3xl', '3xl', '4xl']}
         mt="10px"
-        // textTransform="uppercase"
-        // color="black"
         textAlign="center"
         width={isDesktop ? '600px' : 'auto'}
       >
@@ -60,7 +65,6 @@ export default function Register() {
       display="flex"
       flexDirection="row"
       justifyContent={'center'}
-      // minH="70vh"
     />
   );
 }

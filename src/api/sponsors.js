@@ -13,7 +13,6 @@ import sola from '../assets/cur-sponsor-logo/Solana-Colored.png';
 import spheron from '../assets/cur-sponsor-logo/spheron.jpg';
 import tezo from '../assets/cur-sponsor-logo/tezo.png';
 import unilend from '../assets/cur-sponsor-logo/unilend.svg';
-import zeeve from '../assets/cur-sponsor-logo/zeeve.svg';
 
 import xdc from '../assets/cur-sponsor-logo/xdc.png';
 import trikon from '../assets/cur-sponsor-logo/trikon.png';
@@ -32,7 +31,6 @@ import three from '../assets/cur-sponsor-logo/three.png';
 import meso from '../assets/cur-sponsor-logo/meso.png';
 import aws1 from '../assets/cur-sponsor-logo/aws1.png';
 import debug from '../assets/cur-sponsor-logo/debug.png';
-// import blueLearn from '../assets/cur-sponsor-logo/blueLearn.png';
 
 export const platinum = [
   {
@@ -105,12 +103,6 @@ export const gold = [
     logo: unilend,
     link: 'https://unilend.finance/',
   },
-  // {
-  //   id: 7,
-  //   name: 'zeeve',
-  //   logo: zeeve,
-  //   link: 'https://www.zeeve.io/',
-  // },
   {
     id: 8,
     name: 'trikon',
@@ -195,10 +187,4 @@ export const community = [
     logo: debug,
     link: 'https://www.linkedin.com/company/awsjaipur/',
   },
-  // {
-  //   id: 4,
-  //   name: 'blue Learn',
-  //   logo: blueLearn,
-  //   link: 'https://www.bluelearn.in/',
-  // },
 ];

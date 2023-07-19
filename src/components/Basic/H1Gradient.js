@@ -1,5 +1,6 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
-import React from 'react';
+
+// Custom Heading component with theme styled
 
 export default function H1Gradient({ content, ...props }) {
   return (
